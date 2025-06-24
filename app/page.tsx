@@ -13,7 +13,7 @@ export default function HomePage() {
         {/* Interior Design Section */}
         <Link
           href="/interior-design"
-          className="relative flex-1 group cursor-pointer overflow-hidden"
+          className="relative flex-1 flex items-center justify-center group cursor-pointer overflow-hidden"
           onMouseEnter={() => setHoveredSection("interior")}
           onMouseLeave={() => setHoveredSection(null)}
         >
@@ -27,7 +27,7 @@ export default function HomePage() {
               }}
             />
             {/* Overlay for better text readability */}
-            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all duration-500" />
+            <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-all duration-500" />
           </div>
 
           {/* Content Overlay */}
@@ -53,7 +53,7 @@ export default function HomePage() {
         {/* Advertising Section */}
         <Link
           href="/advertising"
-          className="relative flex-1 group cursor-pointer overflow-hidden"
+          className="relative flex-1 flex items-center justify-center group cursor-pointer overflow-hidden"
           onMouseEnter={() => setHoveredSection("advertising")}
           onMouseLeave={() => setHoveredSection(null)}
         >
@@ -67,7 +67,7 @@ export default function HomePage() {
               }}
             />
             {/* Overlay for better text readability */}
-            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all duration-500" />
+            <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-all duration-500" />
           </div>
 
           {/* Content Overlay */}

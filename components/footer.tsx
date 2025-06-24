@@ -108,7 +108,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 border-t border-gray-800 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 CreativeSpaces. All rights reserved.</p>
+          <p>&copy; 2024 CCORIGINS. All rights reserved.</p>
         </div>
       </div>
     </footer>

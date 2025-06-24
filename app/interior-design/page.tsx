@@ -45,7 +45,7 @@ export default function InteriorDesignPage() {
 
       {/* Header Navigation */}
       {/* <header className="relative z-20 flex items-center justify-between px-6 py-6 lg:px-12">
-        <div className="text-white text-2xl font-light tracking-wider">CREATIVESPACES</div>
+        <div className="text-white text-2xl font-light tracking-wider">CCORIGINS</div>
 
         <nav className="hidden lg:flex items-center space-x-8 text-white text-sm font-light tracking-wide">
           <a href="/about" className="hover:text-gray-300 transition-colors">

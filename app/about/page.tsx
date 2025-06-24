@@ -63,7 +63,7 @@ export default function AboutPage() {
               About
               <span className="bg-gradient-to-r from-amber-600 to-purple-600 bg-clip-text text-transparent">
                 {" "}
-                CreativeSpaces
+                CCORIGINS
               </span>
             </h1>
             <p className="mx-auto max-w-3xl text-lg text-gray-600 md:text-xl">
@@ -81,7 +81,7 @@ export default function AboutPage() {
             <div className="space-y-6">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Our Story</h2>
               <p className="text-lg text-gray-600">
-                Founded in 2018, CreativeSpaces was born from the vision of combining two powerful creative disciplines
+                Founded in 2018, CCORIGINS was born from the vision of combining two powerful creative disciplines
                 under one roof. We recognized that great design principles apply whether you're creating a beautiful
                 living space or a compelling brand campaign.
               </p>

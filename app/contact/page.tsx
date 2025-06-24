@@ -16,7 +16,7 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: "Email",
-      details: ["hello@creativespaces.com", "projects@creativespaces.com"],
+      details: ["hello@CCORIGINS.com", "projects@CCORIGINS.com"],
     },
     {
       icon: MapPin,

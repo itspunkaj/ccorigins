@@ -31,8 +31,8 @@ export default function HomePage() {
           </div>
 
           {/* Content Overlay */}
-          <div className="relative z-10 h-full flex items-center justify-center">
-            <div className="text-center transform transition-all duration-500 group-hover:scale-110">
+          <div className="relative z-10 h-full flex items-center justify-center ">
+            <div className="text-center transform transition-all duration-500 group-hover:scale-110 border-2 rounded-lg border-white p-4 bg-slate-900 bg-opacity-70">
               <h2 className="text-4xl font-light text-white tracking-[0.2em] drop-shadow-lg">
                 Interior Design
               </h2>
@@ -62,7 +62,7 @@ export default function HomePage() {
             <div
               className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
               style={{
-                backgroundImage: `url('/images/ad.webp')`,
+                backgroundImage: `url('/images/billboard.jpg')`,
                 backgroundPosition: "center",
               }}
             />
@@ -72,8 +72,8 @@ export default function HomePage() {
 
           {/* Content Overlay */}
           <div className="relative z-10 h-full flex items-center justify-center">
-            <div className="text-center transform transition-all duration-500 group-hover:scale-110">
-              <h2 className="text-4xl font-light text-white tracking-[0.2em] drop-shadow-lg">
+            <div className="text-center transform transition-all duration-500 group-hover:scale-110 border-2 rounded-lg border-white p-4 bg-slate-900 bg-opacity-70">
+              <h2 className="text-4xl font-light text-white tracking-[0.2em] drop-shadow-lg ">
                 Advertising
               </h2>
               <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">

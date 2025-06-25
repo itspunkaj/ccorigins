@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
 export default function HeroSection() {
-  const [showCookies, setShowCookies] = useState(true)
+  const [showCookies, setShowCookies] = useState(false)
 
   return (
     <div className="relative h-[500px] md:h-screen flex items-center justify-center overflow-hidden">
@@ -39,7 +39,7 @@ export default function HeroSection() {
       </div>
 
       {/* Cookie Preferences Modal */}
-      {showCookies && (
+      {/* {showCookies && (
         <div className="fixed bottom-0 left-0 right-0 z-50 bg-white p-6 shadow-2xl">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-xl font-bold mb-4 text-center">COOKIE PREFERENCES</h2>
@@ -73,7 +73,7 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   )
 }

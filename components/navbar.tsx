@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-black backdrop-blur ">
-      <div className="container flex h-16 items-center justify-between px-4 md:px-6 overflow-hidden">
+      <div className="container flex h-16 w-full mx-auto items-center justify-between px-4 md:px-6 overflow-hidden">
         <Link href="/" className="flex items-center space-x-2">
           {/* <div className="text-2xl font-light tracking-[0.3em] text-black">CCORIGINS</div> */}
           <Image src="/images/logo.jpeg" height={20} width={50} alt="Logo" className="bg-cover w-32"/>

@@ -14,7 +14,7 @@ export default function AboutUs() {
           />
         </div>
         <div className="h-full md:w-1/2 justify-center flex flex-col gap-4 md:p-10">
-          <h1 className="text-4xl"> About Us</h1>
+          <h1 className="text-4xl">The Origin Story</h1>
           <div className="mad:h-64 flex flex-col justify-center">
 
           <p>

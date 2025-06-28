@@ -17,13 +17,26 @@ export default function AboutUs() {
           <h1 className="text-4xl">The Origin Story</h1>
           <div className="mad:h-64 flex flex-col justify-center">
 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed porta massa, viverra euismod enim. Morbi porttitor placerat placerat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer sollicitudin pellentesque tristique. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi vestibulum
-          </p>
+            <p>
+              Our Concept
+              "Design is not just what it looks and feels,
+              Design is how it works" - Steven Jobs.
+              At CCO when we take on a project, we also take on the
+              responsibility not just of aesthetics, but functionality
+              as well.
+              <br/><br/>
+              We at CCO work with a user-centric philosophy, based on
+              listening to our clients & providing innovative solutions,
+              on schedule, within budget. We encourage continuous
+              client user participation throughout the project life. This
+              helps foster productive interaction and build strong relationships.
+              Our approach to design is tailor made to the owner's program,
+              scope, time line and economy. Good design is truly innovative,
+              eminently sensible and source of inspiration for          </p>
             <Button className="mt-10 w-1/3 py-3 rounded-sm uppercase bg-transparent text-black border border-black h-12 hover:text-[#FFCC00]">Learn More</Button>
           </div>
         </div>
-        
+
       </div>
     </div>
   )

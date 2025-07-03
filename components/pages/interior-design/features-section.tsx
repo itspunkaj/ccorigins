@@ -18,21 +18,21 @@ const features = [
     title: "Timely Delivery",
     description: "All projects completed within the agreed timeline with precision.",
   },
-  {
-    icon: Leaf,
-    title: "Sustainable Materials",
-    description: "Eco-friendly choices that are beautiful and environmentally conscious.",
-  },
+  // {
+  //   icon: Leaf,
+  //   title: "Sustainable Materials",
+  //   description: "Eco-friendly choices that are beautiful and environmentally conscious.",
+  // },
   {
     icon: Users,
     title: "Expert Consultation",
     description: "Work directly with experienced designers who understand your vision.",
   },
-  {
-    icon: CheckCircle,
-    title: "End-to-End Service",
-    description: "From concept to completion, we handle every aspect of your project.",
-  },
+  // {
+  //   icon: CheckCircle,
+  //   title: "End-to-End Service",
+  //   description: "From concept to completion, we handle every aspect of your project.",
+  // },
 ]
 
 export default function FeaturesSection() {
@@ -49,7 +49,7 @@ export default function FeaturesSection() {
 
         {/* Features Horizontal Layout */}
         <div className="overflow-x-auto">
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-8 pb-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pb-4">
             {features.map((feature, index) => {
               const IconComponent = feature.icon
               return (

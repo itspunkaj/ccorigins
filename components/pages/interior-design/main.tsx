@@ -1,4 +1,5 @@
 import AboutUs from "./about-us";
+import ArchitectureSection from "./architecture-section";
 import CatalogueSection from "./catalogue-section";
 import ClientCarouselSection from "./client-carousel";
 import CTASection from "./cta-section";
@@ -16,6 +17,7 @@ export default function MainContent() {
       <ClientCarouselSection/>
       <WorkShowcase />
       <FeaturesSection/>
+      <ArchitectureSection/>
       <CatalogueSection/>
       <TestimonialsSection/>
       <CTASection/>

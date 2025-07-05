@@ -145,6 +145,10 @@ body {
 }
 
 
+.swiper .swiper-pagination-bullet {
+  background-color: #FFCC00;
+}
+
 
 
 .catalogueSwiper .swiper-pagination {

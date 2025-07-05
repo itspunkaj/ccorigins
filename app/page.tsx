@@ -1,11 +1,9 @@
 "use client"
 
-import Link from "next/link"
 import { redirect } from "next/navigation"
-import { useState } from "react"
 
 export default function Home() {
-  redirect('/splash')
+  redirect('/home')
 }
 
 // export default function HomePage() {

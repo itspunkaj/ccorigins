@@ -5,12 +5,12 @@ export default function Footer() {
   return (
     <footer className="relative bg-black text-[#FFCC00]">
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 z-10"></div>
-      <div
+      {/* <div
         className="absolute top-0 left-0 w-full h-full bg-fixed bg-center bg-cover"
         style={{
           backgroundImage: "url('/images/office-2.jpg')",
         }}
-      ></div>
+      ></div> */}
       <div className="mx-auto relative h-full bg-transparent z-10 container px-4 py-12 md:px-6">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="space-y-4">

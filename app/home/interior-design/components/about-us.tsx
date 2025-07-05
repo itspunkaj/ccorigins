@@ -6,7 +6,7 @@ export default function AboutUs() {
       <div className="flex flex-col md:flex-row h-4/5 container mx-auto px-4 py-6 md:p-10">
         <div className="h-full max-md:order-last md:py-10 my-4 md:my-0 flex items-center justify-center md:w-1/2 overflow-hidden">
           <video className="w-full h-auto object-cover"
-            src="/videos/interior-1.mp4"
+            src="https://res.cloudinary.com/do43v07fz/video/upload/v1751738554/interior-1_dphoti.mp4"
             autoPlay
             loop
             muted

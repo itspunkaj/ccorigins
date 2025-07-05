@@ -23,7 +23,7 @@ export default function CTASection() {
 
           </div>
           <div className="lg:w-5/12 order-2 p-4">
-            <Image height={500} width={1000} src="/images/apartment.jpg" alt="" className="rounded" />
+            <Image height={500} width={1000} src="https://res.cloudinary.com/do43v07fz/image/upload/v1751741902/apartment_y4cffi.jpg" alt="" className="rounded" />
           </div>
         </div>
 

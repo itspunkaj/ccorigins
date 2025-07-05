@@ -22,8 +22,8 @@ export default function WorkShowcase() {
   const testimonials: Testimonial[] = [
     {
       id: 1,
-      beforeImage: "/images/apartment-before.jpg",
-      afterImage: "/images/apartment.jpg",
+      beforeImage: "https://res.cloudinary.com/do43v07fz/image/upload/v1751742002/apartment-before_ujd2k6.jpg",
+      afterImage: "https://res.cloudinary.com/do43v07fz/image/upload/v1751741902/apartment_y4cffi.jpg",
       clientChallenge:
         "I would love to design my new apartment so that it looks more unique and customized, and not so cookie-cutter.",
       result: "This apartment now captures my personality and style perfectly. Thank you, I love it!",
@@ -32,8 +32,8 @@ export default function WorkShowcase() {
     },
     {
       id: 2,
-      beforeImage: "/images/living-before.jpg",
-      afterImage: "/images/interior.jpg",
+      beforeImage: "https://res.cloudinary.com/do43v07fz/image/upload/v1751742003/living-before_dqh5gm.jpg",
+      afterImage: "https://res.cloudinary.com/do43v07fz/image/upload/v1751737910/interior_yhar1m.jpg",
       clientChallenge:
         "My living room felt cramped and outdated. I wanted a modern, open space that would be perfect for entertaining guests.",
       result:
@@ -43,8 +43,8 @@ export default function WorkShowcase() {
     },
     {
       id: 3,
-      beforeImage: "/images/kitchen-before.jpg",
-      afterImage: "/images/kitchen.jpg",
+      beforeImage: "https://res.cloudinary.com/do43v07fz/image/upload/v1751742003/kitchen-before_zf6yaj.jpg",
+      afterImage: "https://res.cloudinary.com/do43v07fz/image/upload/v1751737911/kitchen_xygciu.jpg",
       clientChallenge:
         "Our kitchen was functional but lacked personality. We wanted something that reflected our love for cooking and hosting dinner parties.",
       result:

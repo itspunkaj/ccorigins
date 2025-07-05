@@ -41,7 +41,7 @@ export default function FeatureInSection () {
         {
           featuredIn.map((element)=>{
             return (
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center" key={element.title}>
               <Image height={500} width={500} src={element.imgUrl || ""} alt={element.title} className={`object-cover w-3/4 ${element.class}`} />
             </div>)
           })

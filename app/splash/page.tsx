@@ -19,7 +19,7 @@ export default function SplashScreen() {
         video.onended = () => {
           sessionStorage.setItem('videoPlayed', 'true')
           setPlayed(true)
-          router.replace("/")
+          router.replace("/home")
         }
       }
     }
@@ -28,10 +28,10 @@ export default function SplashScreen() {
 
   return (
     <div className="h-screen w-screen bg-black text-white ">
-      {played ? <div>Loading</div> :<video
+      {played ? <div>Loading</div> : <video
         ref={videoRef}
         className="h-full w-full"
-        src="/videos/logo.mp4" // Put your video in `public/intro.mp4`
+        src="https://res.cloudinary.com/do43v07fz/video/upload/v1751738439/logo_ltg41p.mp4" // Put your video in `public/intro.mp4`
         muted
         autoPlay
       />}

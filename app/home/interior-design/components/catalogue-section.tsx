@@ -14,168 +14,172 @@ const catalogueData = {
     {
       id: 1,
       title: "Modern Bedroom Design",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/bedroom-1.jpg",
     },
     {
       id: 2,
       title: "Minimalist Bedroom",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/bedroom-2.jpg",
     },
     {
       id: 3,
       title: "Luxury Master Suite",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/bedroom-3.jpg",
     },
     {
       id: 4,
       title: "Cozy Bedroom Retreat",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/bedroom-4.jpg",
     },
     {
       id: 1,
       title: "Modern Bedroom Design",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/bedroom-1.jpg",
     },
     {
       id: 2,
       title: "Minimalist Bedroom",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/bedroom-2.jpg",
     },
     {
       id: 3,
       title: "Luxury Master Suite",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/bedroom-3.jpg",
     },
     {
       id: 4,
       title: "Cozy Bedroom Retreat",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/bedroom-4.jpg",
     },
   ],
   "living-room": [
     {
       id: 5,
       title: "Contemporary Living Space",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/living-1.jpg",
     },
     {
       id: 6,
       title: "Scandinavian Living Room",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/living-2.jpg",
     },
     {
       id: 7,
       title: "Industrial Loft Design",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/living-3.jpg",
     },
     {
       id: 8,
       title: "Family Living Area",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/living-4.jpg",
     },
     {
       id: 5,
       title: "Contemporary Living Space",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/living-1.jpg",
     },
     {
       id: 6,
       title: "Scandinavian Living Room",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/living-2.jpg",
     },
     {
       id: 7,
       title: "Industrial Loft Design",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/living-3.jpg",
     },
     {
       id: 8,
       title: "Family Living Area",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/living-4.jpg",
     },
   ],
   office: [
     {
       id: 9,
       title: "Executive Office Design",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/office-1.jpg",
     },
     {
       id: 10,
       title: "Home Office Setup",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/office-2.jpg",
     },
     {
       id: 11,
       title: "Creative Workspace",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/office-3.jpg",
     },
     {
       id: 12,
       title: "Modern Co-working Space",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/office-4.jpg",
     },
     {
       id: 9,
       title: "Executive Office Design",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/office-1.jpg",
     },
     {
       id: 10,
       title: "Home Office Setup",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/office-2.jpg",
     },
     {
       id: 11,
       title: "Creative Workspace",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/office-3.jpg",
     },
     {
       id: 12,
       title: "Modern Co-working Space",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/office-4.jpg",
     },
   ],
   cafe: [
     {
       id: 13,
       title: "Cozy Coffee Shop",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/cafe-1.jpg",
     },
     {
       id: 14,
       title: "Modern Cafe Interior",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/cafe-2.jpg"
     },
     {
       id: 15,
       title: "Rustic Cafe Design",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/cafe-3.jpg",
     },
     {
       id: 16,
       title: "Urban Bistro Style",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/cafe-4.jpg",
     },
     {
       id: 13,
       title: "Cozy Coffee Shop",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/cafe-1.jpg",    
+
     },
     {
       id: 14,
       title: "Modern Cafe Interior",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/cafe-2.jpg",    
+
     },
     {
       id: 15,
       title: "Rustic Cafe Design",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/cafe-3.jpg",    
+
     },
     {
       id: 16,
       title: "Urban Bistro Style",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/catalogue/cafe-4.jpg",    
+
     },
   ],
 }

@@ -12,11 +12,11 @@ export default function Navbar() {
 
   const navItems = [
     { name: "Home", href: "/" },
-    { name: "Interior Design", href: "/interior-design" },
-    { name: "Advertising", href: "/advertising" },
+    { name: "Interior Design", href: "/home/interior-design" },
+    { name: "Advertising", href: "/home/advertising" },
     { name: "Portfolio", href: "/portfolio" },
     { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
+    { name: "Contact", href: "/home/contact" },
   ]
 
   return (
@@ -40,12 +40,12 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden md:flex items-center space-x-4">
+        {/* <div className="hidden md:flex items-center space-x-4">
           <Button variant="outline" className="bg-white text-black border-gray-300 font-light tracking-wider">
             Sign In
           </Button>
           <Button className="bg-black hover:bg-gray-800 text-white font-light tracking-wider">Get Started</Button>
-        </div>
+        </div> */}
 
         {/* Mobile Navigation */}
         <Sheet open={isOpen} onOpenChange={setIsOpen}>

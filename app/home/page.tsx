@@ -11,7 +11,7 @@ export default function HomePage() {
       <div className="flex-1 flex flex-col md:flex-row">
         {/* Interior Design Section */}
         <Link
-          href="/interior-design"
+          href="/home/interior-design"
           className="relative flex-1 flex items-center justify-center group cursor-pointer overflow-hidden"
           onMouseEnter={() => setHoveredSection("interior")}
           onMouseLeave={() => setHoveredSection(null)}
@@ -51,7 +51,7 @@ export default function HomePage() {
 
         {/* Advertising Section */}
         <Link
-          href="/advertising"
+          href="/home/advertising"
           className="relative flex-1 flex items-center justify-center group cursor-pointer overflow-hidden"
           onMouseEnter={() => setHoveredSection("advertising")}
           onMouseLeave={() => setHoveredSection(null)}

@@ -11,7 +11,7 @@ export default function Footer() {
           backgroundImage: "url('/images/office-2.jpg')",
         }}
       ></div> */}
-      <div className="mx-auto relative h-full bg-transparent z-10 container px-4 py-12 md:px-6">
+      <div className="mx-auto relative bg-transparent z-10 container px-4 py-12 md:px-6">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">

@@ -5,6 +5,7 @@ import { Inter } from "next/font/google"
 import "@/app/globals.css"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
+
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export default function RootLayout({
 
 
   return (
-    <html>
+    <html suppressHydrationWarning={true}>
       <body>
       <Navbar />
       <main className="min-h-screen">{children}</main>

@@ -13,6 +13,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import Counter from '@/components/ui/counter';
 
 
 const skills = [
@@ -75,7 +76,7 @@ export default function About() {
     }
   }, [inView]);
   return (
-    <div className="w-full py-20 bg-white">
+    <div className="w-full bg-white">
       <div className="container mx-auto px-4 lg:px-20 py-20">
         <div className="max-w-7xl mx-auto">
           {/* Text Content */}
@@ -85,9 +86,29 @@ export default function About() {
               <h1 className="text-3xl font-bold mb-6">
                 Your <span className='text-primaryYellow font-semibold'>Brand</span>. Our <span className='text-primaryYellow font-semibold'>Spark</span>. Infinite <span className='text-primaryYellow font-semibold'>Impact</span>.
               </h1>
+              {/* <div className='flex justify-between my-8'>
+                <div className='text-center w-1/3'>
+                  <Counter end={200} suffix='+'/>
+                  <span className='text-lg font-semibold'>Projects</span>
+                </div>
+                <div className='text-center w-1/3'>
+                  <Counter end={95} suffix='%'/>
+                  <span className='text-lg font-semibold'>Satisfaction Rate</span>
+                </div>
+                <div className='text-center w-1/3'>
+                  <Counter end={150} suffix='+'/>
+                  <span className='text-lg font-semibold'>Clients</span>
+                </div>
+              </div> */}
               <p className="text-gray-600 mb-8">
-                For over 20 years, COO has been the Creative Catalyst behind standout advertising and unforgettable events. We fuse bold ideas with flawless execution to craft experiences that connect, engage, and inspire.
-              </p>
+                Digital we are the biggest digital agency,
+                more than 200 internal. We are known for our
+                company making digital PR even more
+                sophisticated. Welcome to Borcelle, where we
+                generate the Digital Business our clients
+                deserve. We can help your digital PR, all your
+                company&apos;s campaign needs in any field will
+                be carried out properly.</p>
 
               {/* Skills */}
               <div className='' ref={ref}>

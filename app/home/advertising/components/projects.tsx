@@ -1,7 +1,11 @@
 'use client';
 
+
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
 
 const stories = [
   {
@@ -46,30 +50,40 @@ const stories = [
 export default function ProjectsSection() {
   return (
     <div className="w-full bg-black text-white px-4 md:px-12 py-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-[1600px] mx-auto">
-        {stories.map((story, index) => (
-          <motion.div
-            key={story.id}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.2, duration: 0.6, ease: 'easeOut' }}
-            viewport={{ once: true }}
-          >
-            <div className="rounded-xl overflow-hidden relative h-96">
-              <Image
-                src={story.image}
-                alt={story.title}
-                width={800}
-                height={450}
-                className="h-full object-cover"
-              />
-              
-            </div>
-
-            <h3 className="mt-6 text-xl md:text-2xl font-semibold">{story.title}</h3>
-            <p className="mt-2 text-gray-300 text-sm md:text-base">{story.desc}</p>
-          </motion.div>
-        ))}
+      <div className="max-w-[1600px] mx-auto">
+        <Swiper
+          spaceBetween={32}
+          slidesPerView={1}
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+            },
+          }}
+          loop={true}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          modules={[Autoplay]}
+          pagination={false}
+          navigation={false}
+          className=""
+        >
+          {stories.map((story, index) => (
+            <SwiperSlide key={story.id}>
+              <div>
+                <div className="rounded-xl overflow-hidden relative h-80">
+                  <Image
+                    src={story.image}
+                    alt={story.title}
+                    width={800}
+                    height={450}
+                    className="h-full object-cover"
+                  />
+                </div>
+                <h3 className="mt-6 text-xl md:text-2xl font-semibold">{story.title}</h3>
+                <p className="mt-2 text-gray-300 text-sm md:text-base">{story.desc}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );

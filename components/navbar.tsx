@@ -66,12 +66,6 @@ export default function Navbar() {
                   {item.name}
                 </Link>
               ))}
-              <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="outline" className="bg-white text-black border-gray-300 font-light tracking-wider">
-                  Sign In
-                </Button>
-                <Button className="bg-black hover:bg-gray-800 text-white font-light tracking-wider">Get Started</Button>
-              </div>
             </div>
           </SheetContent>
         </Sheet>

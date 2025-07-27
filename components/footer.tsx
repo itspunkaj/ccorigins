@@ -39,24 +39,24 @@ export default function Footer() {
             <h3 className="text-lg font-semibold">Interior Design</h3>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <Link href="/interior-design/residential" className="hover:text-white">
+                <p className="hover:text-white">
                   Residential
-                </Link>
+                </p>
               </li>
               <li>
-                <Link href="/interior-design/commercial" className="hover:text-white">
+                <p className="hover:text-white">
                   Commercial
-                </Link>
+                </p>
               </li>
               <li>
-                <Link href="/interior-design/consultation" className="hover:text-white">
+                <p className="hover:text-white">
                   Consultation
-                </Link>
+                </p>
               </li>
               <li>
-                <Link href="/interior-design/3d-rendering" className="hover:text-white">
+                <p className="hover:text-white">
                   3D Rendering
-                </Link>
+                </p>
               </li>
             </ul>
           </div>
@@ -65,24 +65,24 @@ export default function Footer() {
             <h3 className="text-lg font-semibold">Advertising</h3>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <Link href="/advertising/brand-strategy" className="hover:text-white">
+                <p className="hover:text-white">
                   Brand Strategy
-                </Link>
+                </p>
               </li>
               <li>
-                <Link href="/advertising/digital-marketing" className="hover:text-white">
+                <p className="hover:text-white">
                   Digital Marketing
-                </Link>
+                </p>
               </li>
               <li>
-                <Link href="/advertising/creative-campaigns" className="hover:text-white">
+                <p className="hover:text-white">
                   Creative Campaigns
-                </Link>
+                </p>
               </li>
               <li>
-                <Link href="/advertising/social-media" className="hover:text-white">
+                <p className="hover:text-white">
                   Social Media
-                </Link>
+                </p>
               </li>
             </ul>
           </div>
@@ -101,9 +101,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/careers" className="hover:text-white">
+                <p className="hover:text-white">
                   Careers
-                </Link>
+                </p>
               </li>
             </ul>
           </div>

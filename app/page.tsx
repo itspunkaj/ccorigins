@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from "lucide-react";
 import { FlipWords } from "@/components/ui/flip-words";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ThreeDMarqueeDemoSecond() {
   const images = [
@@ -52,24 +53,24 @@ export default function ThreeDMarqueeDemoSecond() {
     }
   };
 
-  const words =[
+  const words = [
     "Designing spaces that inspire and elevate.",
-"Ideas that spark attention and create impact.",
-"Timeless interiors, tailored for your lifestyle.",
-"Campaigns that connect, events that captivate.",
+    "Ideas that spark attention and create impact.",
+    "Timeless interiors, tailored for your lifestyle.",
+    "Campaigns that connect, events that captivate.",
   ]
 
   return (
     <div className="relative z-30 flex h-screen w-full  flex-col items-center justify-center overflow-hidden">
-      <h2 className="relative z-20 mx-auto w-full text-center text-2xl font-bold text-balance text-white md:text-4xl lg:text-6xl">
+      <h2 className="relative z-20 mx-auto w-full text-center text-4xl leading-relaxed font-bold text-balance text-white md:text-4xl lg:text-6xl">
         "One Studio,{" "}
         <span className="relative z-20 inline-block rounded-xl bg-yellow-500/40 px-4 py-1 text-white underline decoration-primaryYellow decoration-[6px] underline-offset-[16px] backdrop-blur-sm">
           Two Worlds
         </span>{" "}
         of Creativity"
       </h2>
-      <div className="relative z-20 mx-auto max-w-3xl py-8 text-center  text-2xl">
-        <FlipWords className="text-slate-300" words={words}/>
+      <div className="relative z-20 mx-auto max-w-3xl py-8 text-center text-md  md:text-2xl">
+        <FlipWords className="text-slate-300" words={words} />
       </div>
 
       <div className="relative z-20 flex flex-wrap items-center justify-center gap-4 pt-4">
@@ -78,16 +79,18 @@ export default function ThreeDMarqueeDemoSecond() {
           const [hovered, setHovered] = React.useState(false);
           return (
             <motion.div className="mt-auto">
-              <Button
-                variant={hovered ? "default" : "outline"}
-                onMouseEnter={() => setHovered(true)}
-                onMouseLeave={() => setHovered(false)}
-              >
-                View Architecture & Interiors
-                <motion.div variants={arrowVariants}>
-                  <ArrowRight size={18} />
-                </motion.div>
-              </Button>
+              <Link href="/interior-design">
+                <Button
+                  variant={hovered ? "default" : "outline"}
+                  onMouseEnter={() => setHovered(true)}
+                  onMouseLeave={() => setHovered(false)}
+                >
+                  View Architecture & Interiors
+                  <motion.div variants={arrowVariants}>
+                    <ArrowRight size={18} />
+                  </motion.div>
+                </Button>
+              </Link>
             </motion.div>
           );
         })()}
@@ -96,6 +99,7 @@ export default function ThreeDMarqueeDemoSecond() {
           const [hovered, setHovered] = React.useState(false);
           return (
             <motion.div className="mt-auto">
+              <Link href="/advertising">
               <Button
                 variant={hovered ? "default" : "outline"}
                 onMouseEnter={() => setHovered(true)}
@@ -106,6 +110,7 @@ export default function ThreeDMarqueeDemoSecond() {
                   <ArrowRight size={18} />
                 </motion.div>
               </Button>
+              </Link>
             </motion.div>
           );
         })()}

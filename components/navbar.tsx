@@ -15,7 +15,6 @@ export default function Navbar() {
     { name: "Interior Design", href: "/interior-design" },
     { name: "Advertising", href: "/advertising" },
     { name: "Portfolio", href: "/portfolio" },
-    { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ]
 

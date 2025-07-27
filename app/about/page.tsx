@@ -57,7 +57,7 @@ export default function AboutPage() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-gray-50 to-gray-100">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="text-center space-y-8">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
               About
@@ -76,7 +76,7 @@ export default function AboutPage() {
 
       {/* Story Section */}
       <section className="py-24 bg-white">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div className="space-y-6">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Our Story</h2>
@@ -101,7 +101,7 @@ export default function AboutPage() {
 
       {/* Values Section */}
       <section className="py-24 bg-gray-50">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">Our Values</h2>
             <p className="mx-auto max-w-2xl text-lg text-gray-600">
@@ -127,7 +127,7 @@ export default function AboutPage() {
 
       {/* Team Section */}
       <section className="py-24 bg-white">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">Meet Our Team</h2>
             <p className="mx-auto max-w-2xl text-lg text-gray-600">
@@ -157,7 +157,7 @@ export default function AboutPage() {
 
       {/* Stats Section */}
       <section className="py-24 bg-gradient-to-r from-amber-600 to-purple-600 text-white">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">Our Impact</h2>
             <p className="text-xl opacity-90">Numbers that reflect our commitment to excellence and client success.</p>

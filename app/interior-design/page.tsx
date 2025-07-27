@@ -1,4 +1,5 @@
-import MainContent from "@/app/home/interior-design/components/main";
+import MainContent from "./components/main";
+
 
 export default function Page () {
   return (

@@ -21,7 +21,7 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "Address",
-      details: ["123 Creative Avenue", "Design District, NY 10001"],
+      details: ["105/17/1 4th Floor Block B Unit-401", "G.G.Road,Liluah Howrah-711204"],
     },
     {
       icon: Clock,
@@ -34,11 +34,11 @@ export default function ContactPage() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-gray-50 to-gray-100">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="text-center space-y-8">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
               Get In
-              <span className="bg-gradient-to-r from-amber-600 to-purple-600 bg-clip-text text-transparent">
+              <span className=" text-primaryYellow">
                 {" "}
                 Touch
               </span>
@@ -53,7 +53,7 @@ export default function ContactPage() {
 
       {/* Contact Form & Info */}
       <section className="py-24 bg-white">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Contact Form */}
             <div className="space-y-8">
@@ -125,10 +125,9 @@ export default function ContactPage() {
                     className="min-h-[120px]"
                   />
                 </div>
-
                 <Button
                   size="lg"
-                  className="w-full bg-gradient-to-r from-amber-600 to-purple-600 hover:from-amber-700 hover:to-purple-700"
+                  className="w-full"
                 >
                   Send Message
                 </Button>
@@ -146,11 +145,11 @@ export default function ContactPage() {
 
               <div className="grid gap-6">
                 {contactInfo.map((info, index) => (
-                  <Card key={index} className="border-0 shadow-lg">
+                  <Card key={index} className="border ">
                     <CardHeader className="pb-3">
                       <CardTitle className="flex items-center gap-3 text-lg">
-                        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-amber-100 to-purple-100">
-                          <info.icon className="h-5 w-5 text-amber-600" />
+                        <div className="flex h-10 w-10 items-center justify-center rounded-full">
+                          <info.icon className="h-5 w-5 text-primaryYellow" />
                         </div>
                         {info.title}
                       </CardTitle>
@@ -167,18 +166,15 @@ export default function ContactPage() {
               </div>
 
               {/* Map Placeholder */}
-              <Card className="border-0 shadow-lg overflow-hidden">
+              <div className="border shadow-lg overflow-hidden">
                 <div className="aspect-video bg-gray-200 relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-amber-100/50 to-purple-100/50" />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center">
-                      <MapPin className="h-12 w-12 text-amber-600 mx-auto mb-2" />
-                      <p className="text-gray-600 font-medium">Interactive Map</p>
-                      <p className="text-sm text-gray-500">Visit us at our Design District location</p>
-                    </div>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1946.1987957183899!2d88.3526550421083!3d22.618262362393093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89d7b6834bbdf%3A0xb259d59b0cf2f5be!2sGovernment%20Quarters%2C%20Vivekananda%20Colony%2C%20Belur%2C%20Howrah%2C%20West%20Bengal%20711202!5e0!3m2!1sen!2sin!4v1753624882852!5m2!1sen!2sin" height="320" width="600" allowFullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                  </div>
                   </div>
-                </div>
-              </Card>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
@@ -186,7 +182,7 @@ export default function ContactPage() {
 
       {/* FAQ Section */}
       <section className="py-24 bg-gray-50">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">Frequently Asked Questions</h2>
             <p className="mx-auto max-w-2xl text-lg text-gray-600">

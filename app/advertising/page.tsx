@@ -1,4 +1,5 @@
-import { MainContent } from "@/app/home/advertising/components/main";
+import { MainContent } from "./components/main";
+
 
 export default function AdvertisingPage () {
   return (

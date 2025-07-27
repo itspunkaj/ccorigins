@@ -33,7 +33,7 @@ export default function AboutUs() {
               Our approach to design is tailor made to the owner's program,
               scope, time line and economy. Good design is truly innovative,
               eminently sensible and source of inspiration for          </p>
-            <Button className="mt-10 w-1/3 py-3 rounded-sm uppercase bg-transparent text-black border border-black h-12 hover:text-[#FFCC00]">Learn More</Button>
+            <Button className="mt-10 w-1/3 py-3 rounded-sm uppercase bg-transparent text-black border border-black h-12">Learn More</Button>
           </div>
         </div>
 

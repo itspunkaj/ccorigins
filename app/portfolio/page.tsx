@@ -1,13 +1,18 @@
+"use client"
 import { ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { useState } from "react"
+
+type ProjectFilter = "all" | "advertising" | "interior design" | "architecture";
 
 export default function PortfolioPage() {
+  const [projectFilter, setProjectFilter] = useState<ProjectFilter>("all")
   const projects = [
     {
       id: 1,
       title: "Modern Luxury Apartment",
-      category: "Interior Design",
+      category: "interior design",
       type: "Residential",
       image: "/placeholder.svg?height=400&width=600",
       description: "A sophisticated urban living space with clean lines and premium finishes.",
@@ -15,7 +20,7 @@ export default function PortfolioPage() {
     {
       id: 2,
       title: "Tech Startup Rebrand",
-      category: "Advertising",
+      category: "advertising",
       type: "Brand Strategy",
       image: "/placeholder.svg?height=400&width=600",
       description: "Complete brand transformation for a growing technology company.",
@@ -23,7 +28,7 @@ export default function PortfolioPage() {
     {
       id: 3,
       title: "Boutique Hotel Design",
-      category: "Interior Design",
+      category: "interior design",
       type: "Commercial",
       image: "/placeholder.svg?height=400&width=600",
       description: "Elegant hospitality design that creates memorable guest experiences.",
@@ -31,7 +36,7 @@ export default function PortfolioPage() {
     {
       id: 4,
       title: "Fashion Campaign",
-      category: "Advertising",
+      category: "advertising",
       type: "Creative Campaign",
       image: "/placeholder.svg?height=400&width=600",
       description: "Bold visual campaign that increased brand awareness by 200%.",
@@ -39,7 +44,7 @@ export default function PortfolioPage() {
     {
       id: 5,
       title: "Executive Office Suite",
-      category: "Interior Design",
+      category: "architecture",
       type: "Commercial",
       image: "/placeholder.svg?height=400&width=600",
       description: "Professional workspace design that inspires productivity and success.",
@@ -47,7 +52,7 @@ export default function PortfolioPage() {
     {
       id: 6,
       title: "Restaurant Launch",
-      category: "Advertising",
+      category: "advertising",
       type: "Brand Activation",
       image: "/placeholder.svg?height=400&width=600",
       description: "Multi-channel campaign that drove 500% increase in opening week traffic.",
@@ -58,11 +63,11 @@ export default function PortfolioPage() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-gray-50 to-gray-100">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="text-center space-y-8">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
               Our
-              <span className="bg-gradient-to-r from-amber-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="text-primaryYellow">
                 {" "}
                 Portfolio
               </span>
@@ -77,22 +82,19 @@ export default function PortfolioPage() {
 
       {/* Filter Section */}
       <section className="py-8 bg-white border-b">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button variant="outline" className="bg-amber-600 text-white border-amber-600">
+            <Button variant={projectFilter!== "all" ? "outline" : "default"} onClick={()=>setProjectFilter("all")}>
               All Projects
             </Button>
-            <Button variant="outline" className="bg-white text-black border-gray-300">
+            <Button variant={projectFilter!== "interior design" ? "outline" : "default"} onClick={()=>setProjectFilter("interior design")}>
               Interior Design
             </Button>
-            <Button variant="outline" className="bg-white text-black border-gray-300">
+            <Button variant={projectFilter!== "advertising" ? "outline" : "default"} onClick={()=>setProjectFilter("advertising")}>
               Advertising
             </Button>
-            <Button variant="outline" className="bg-white text-black border-gray-300">
-              Residential
-            </Button>
-            <Button variant="outline" className="bg-white text-black border-gray-300">
-              Commercial
+            <Button variant={projectFilter!== "architecture" ? "outline" : "default"} onClick={()=>setProjectFilter("architecture")}>
+              Architecture
             </Button>
           </div>
         </div>
@@ -100,12 +102,14 @@ export default function PortfolioPage() {
 
       {/* Portfolio Grid */}
       <section className="py-24 bg-white">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {projects.map((project) => (
+            {projects
+              .filter((el) => projectFilter === "all" || el.category === projectFilter)
+              .map((project) => (
               <Card
                 key={project.id}
-                className="group overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300"
+                className="group overflow-hidden border hover:shadow-[4px_4px_0px_0px_rgba(255,204,0)] border-black transition-all duration-300"
               >
                 <div className="relative overflow-hidden">
                   <div className="aspect-[4/3] bg-gray-200">
@@ -116,16 +120,16 @@ export default function PortfolioPage() {
                   </div>
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300" />
                   <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <Button size="sm" variant="secondary" className="bg-white/90 text-black">
+                    <Button size="sm" >
                       <ExternalLink className="h-4 w-4" />
                     </Button>
                   </div>
                   <div className="absolute top-4 left-4">
                     <span
-                      className={`px-3 py-1 rounded-full text-xs font-medium ${
-                        project.category === "Interior Design"
+                      className={`px-3 py-1 rounded-full text-xs font-medium capitalize ${
+                        project.category === "interior design"
                           ? "bg-amber-100 text-amber-800"
-                          : "bg-purple-100 text-purple-800"
+                          : project.category === "advertising" ?  "bg-purple-100 text-purple-800" : "bg-green-100 text-green-800"
                       }`}
                     >
                       {project.category}
@@ -148,8 +152,8 @@ export default function PortfolioPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-amber-600 to-purple-600 text-white">
-        <div className="container px-4 text-center md:px-6">
+      <section className="py-24 bg-primary text-white">
+        <div className="container mx-auto px-4 text-center md:px-6">
           <div className="mx-auto max-w-3xl space-y-8">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
               Ready to Create Something Amazing?

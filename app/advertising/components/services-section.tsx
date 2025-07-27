@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { CalendarCheck, CodeXml, Megaphone, TvMinimalPlay } from "lucide-react";
 
 export default function ServicesSection() {
@@ -15,8 +16,8 @@ export default function ServicesSection() {
                         are at the heart of all we do. We work tirelessly to protect you and your customers.</p>
                     <div className="pt-6 mt-6 space-y-4 border-t border-gray-200 dark:border-gray-700">
                         <div>
-                            <a href="#"
-                                className="inline-flex items-center text-base font-medium text-primaryYellow hover:text-purple-800 dark:text-primaryYellow dark:hover:text-purple-700">
+                            <Button
+                                className="bg-white ">
                                 Contact Us Now
                                 <svg className="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -24,11 +25,10 @@ export default function ServicesSection() {
                                         d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
                                         clipRule="evenodd"></path>
                                 </svg>
-                            </a>
+                            </Button>
                         </div>
                         <div>
-                            <a href="#"
-                                className="inline-flex items-center text-base font-medium text-primaryYellow hover:text-purple-800 dark:text-primaryYellow dark:hover:text-purple-700">
+                            <Button>
                                 Book An Appointment
                                 <svg className="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -36,7 +36,7 @@ export default function ServicesSection() {
                                         d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
                                         clipRule="evenodd"></path>
                                 </svg>
-                            </a>
+                            </Button>
                         </div>
                     </div>
                 </div>

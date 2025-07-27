@@ -34,11 +34,11 @@ export default function ContactPage() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-gray-50 to-gray-100">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="text-center space-y-8">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
               Get In
-              <span className="bg-gradient-to-r from-amber-600 to-purple-600 bg-clip-text text-transparent">
+              <span className=" text-primaryYellow">
                 {" "}
                 Touch
               </span>
@@ -53,7 +53,7 @@ export default function ContactPage() {
 
       {/* Contact Form & Info */}
       <section className="py-24 bg-white">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Contact Form */}
             <div className="space-y-8">
@@ -125,10 +125,9 @@ export default function ContactPage() {
                     className="min-h-[120px]"
                   />
                 </div>
-
                 <Button
                   size="lg"
-                  className="w-full bg-gradient-to-r from-amber-600 to-purple-600 hover:from-amber-700 hover:to-purple-700"
+                  className="w-full"
                 >
                   Send Message
                 </Button>
@@ -186,7 +185,7 @@ export default function ContactPage() {
 
       {/* FAQ Section */}
       <section className="py-24 bg-gray-50">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">Frequently Asked Questions</h2>
             <p className="mx-auto max-w-2xl text-lg text-gray-600">

@@ -12,7 +12,7 @@ export default function CTASection() {
             <p className="text-xl">Reach out to us to consult and catalyse your custom requirements.</p>
 
             <div className="py-5 flex flex-col md:flex-row gap-4">
-              <Button size={"lg"} className="uppercase hover:scale-105 transition-all duration-150">
+              <Button size={"lg"} className="">
                 Book A Consultation
               </Button>
               <Button variant={"outline"} size={"lg"} className=" uppercase group hover:bg-transparent hover:border-black">

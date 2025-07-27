@@ -1,10 +1,14 @@
 // components/HeroSection.jsx
 import Image from 'next/image';
 import '../styles.css'
+import { Button } from '@/components/ui/button';
 export default function HeroSection() {
   return (
     <section className="bg-white relative text-white h-[90vh] overflow-hidden">
         <div className='bg-primaryYellow absolute top-0 rotate-6 h-[1700px] w-[1700px] left-0 -translate-x-96 -translate-y-2/3  z-0 hexagon'>
+        <div className='fixed top-0 left-0 w-full h-full bg-black opacity-10'>
+
+        </div>
             <div className='fixed bottom-10 right-96 h-48 w-48 transparent rounded-full border-8 border-white border-opacity-20'>
             </div>
             <div className='fixed bottom-[350px] left-[350px] h-48 w-48 transparent rounded-full border-[24px] border-white border-opacity-30'>
@@ -29,9 +33,9 @@ export default function HeroSection() {
             acquiring new skills and knowledge.
           </p>
 
-          <button className="bg-yellow-300 text-black px-6 py-3 rounded-md font-semibold mt-4">
+          <Button>
             More About Us
-          </button>
+          </Button>
         </div>
 
         {/* Right Images */}

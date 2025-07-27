@@ -12,11 +12,11 @@ export default function Navbar() {
 
   const navItems = [
     { name: "Home", href: "/" },
-    { name: "Interior Design", href: "/home/interior-design" },
-    { name: "Advertising", href: "/home/advertising" },
+    { name: "Interior Design", href: "/interior-design" },
+    { name: "Advertising", href: "/advertising" },
     { name: "Portfolio", href: "/portfolio" },
     { name: "About", href: "/about" },
-    { name: "Contact", href: "/home/contact" },
+    { name: "Contact", href: "/contact" },
   ]
 
   return (

@@ -26,7 +26,7 @@ export function EmailSection() {
   };
   return (
     <div className="h-[20rem] flex flex-col justify-center  items-center px-4">
-      <h2 className="mb-6 text-xl text-center sm:text-5xl text-white font-extralight">
+      <h2 className="mb-6 text-3xl text-center sm:text-5xl text-white font-extralight">
         Book a Consultation with <br/>
         <FlipWords className="text-primaryYellow" words={words}/>
       </h2>

@@ -15,8 +15,7 @@ export default function AboutUs() {
         </div>
         <div className="h-full md:w-1/2 justify-center flex flex-col gap-4 md:p-10">
           <h1 className="text-4xl">The Origin Story</h1>
-          <div className="mad:h-64 flex flex-col justify-center">
-
+          <div className=" flex flex-col justify-center">
             <p>
               Our Concept
               "Design is not just what it looks and feels,
@@ -32,8 +31,9 @@ export default function AboutUs() {
               helps foster productive interaction and build strong relationships.
               Our approach to design is tailor made to the owner's program,
               scope, time line and economy. Good design is truly innovative,
-              eminently sensible and source of inspiration for          </p>
-            <Button className="mt-10 w-1/3 py-3 rounded-sm uppercase bg-transparent text-black border border-black h-12">Learn More</Button>
+              eminently sensible and source of inspiration for.
+              </p>
+            <Button className="mt-10 md:w-1/3 py-3 rounded-sm uppercase bg-transparent text-black border border-black h-12">Learn More</Button>
           </div>
         </div>
 

@@ -18,7 +18,7 @@ export default function ServicesSection() {
                         <div>
                             <Button
                                 className="bg-white ">
-                                Contact Us Now
+                                Contact Us
                                 <svg className="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fillRule="evenodd"
@@ -43,25 +43,25 @@ export default function ServicesSection() {
                 <div className="col-span-2 space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0">
                     <div className="max-sm:flex max-sm:items-center max-sm:flex-col max-sm:text-center">
                         <Megaphone size={48} className="text-primaryYellow" />
-                        <h3 className="mb-2 text-2xl font-bold dark:text-white">Advertising</h3>
-                        <p className="font-light text-gray-500 dark:text-gray-400">For Landwind, with zero maintenance downtime</p>
+                        <h3 className="mb-2 text-3xl font-bold dark:text-white">Advertising</h3>
+                        {/* <p className="font-light text-gray-500 dark:text-gray-400">For Landwind, with zero maintenance downtime</p> */}
                     </div>
                     <div className="max-sm:flex max-sm:items-center max-sm:flex-col max-sm:text-center">
                         <CalendarCheck size={48} className="text-primaryYellow" />
-                        <h3 className="mb-2 text-2xl font-bold dark:text-white">Exhibit &amp; Events</h3>
-                        <p className="font-light text-gray-500 dark:text-gray-400">Trusted by over 600 milion users around the world
-                        </p>
+                        <h3 className="mb-2 text-3xl font-bold dark:text-white">Exhibit &amp; Events</h3>
+                        {/* <p className="font-light text-gray-500 dark:text-gray-400">Trusted by over 600 milion users around the world
+                        </p> */}
                     </div>
                     <div className="max-sm:flex max-sm:items-center max-sm:flex-col max-sm:text-center">
                         <TvMinimalPlay size={48} className="text-primaryYellow" />
-                        <h3 className="mb-2 text-2xl font-bold dark:text-white">Digital Marketing</h3>
-                        <p className="font-light text-gray-500 dark:text-gray-400">Have used Landwind to create functional websites
-                        </p>
+                        <h3 className="mb-2 text-3xl font-bold dark:text-white">Offline and Online Marketing</h3>
+                        {/* <p className="font-light text-gray-500 dark:text-gray-400">Have used Landwind to create functional websites */}
+                        {/* </p> */}
                     </div>
                     <div className="max-sm:flex max-sm:items-center max-sm:flex-col max-sm:text-center">
                         <CodeXml size={48} className="text-primaryYellow" />
-                        <h3 className="mb-2 text-2xl font-bold dark:text-white">Web Development</h3>
-                        <p className="font-light text-gray-500 dark:text-gray-400 ">From URL to IRL — we make you impossible to ignore.</p>
+                        <h3 className="mb-2 text-3xl font-bold dark:text-white">Web Development</h3>
+                        {/* <p className="font-light text-gray-500 dark:text-gray-400 ">From URL to IRL — we make you impossible to ignore.</p> */}
                     </div>
                 </div>
             </div>

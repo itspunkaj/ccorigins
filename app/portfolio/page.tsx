@@ -14,7 +14,7 @@ export default function PortfolioPage() {
       title: "Modern Luxury Apartment",
       category: "interior design",
       type: "Residential",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/portfolio/modern-apartment.avif",
       description: "A sophisticated urban living space with clean lines and premium finishes.",
     },
     {
@@ -22,7 +22,7 @@ export default function PortfolioPage() {
       title: "Tech Startup Rebrand",
       category: "advertising",
       type: "Brand Strategy",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/portfolio/tech-startup.jpg",
       description: "Complete brand transformation for a growing technology company.",
     },
     {
@@ -30,7 +30,7 @@ export default function PortfolioPage() {
       title: "Boutique Hotel Design",
       category: "interior design",
       type: "Commercial",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/portfolio/botique-hotel.jpg",
       description: "Elegant hospitality design that creates memorable guest experiences.",
     },
     {
@@ -38,7 +38,7 @@ export default function PortfolioPage() {
       title: "Fashion Campaign",
       category: "advertising",
       type: "Creative Campaign",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/portfolio/fashion.jpg",
       description: "Bold visual campaign that increased brand awareness by 200%.",
     },
     {
@@ -46,7 +46,7 @@ export default function PortfolioPage() {
       title: "Executive Office Suite",
       category: "architecture",
       type: "Commercial",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/portfolio/executive-office.jpg",
       description: "Professional workspace design that inspires productivity and success.",
     },
     {
@@ -54,7 +54,7 @@ export default function PortfolioPage() {
       title: "Restaurant Launch",
       category: "advertising",
       type: "Brand Activation",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/portfolio/restaurant.jpg",
       description: "Multi-channel campaign that drove 500% increase in opening week traffic.",
     },
   ]
@@ -84,16 +84,16 @@ export default function PortfolioPage() {
       <section className="py-8 bg-white border-b">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button variant={projectFilter!== "all" ? "outline" : "default"} onClick={()=>setProjectFilter("all")}>
+            <Button variant={projectFilter !== "all" ? "outline" : "default"} onClick={() => setProjectFilter("all")}>
               All Projects
             </Button>
-            <Button variant={projectFilter!== "interior design" ? "outline" : "default"} onClick={()=>setProjectFilter("interior design")}>
+            <Button variant={projectFilter !== "interior design" ? "outline" : "default"} onClick={() => setProjectFilter("interior design")}>
               Interior Design
             </Button>
-            <Button variant={projectFilter!== "advertising" ? "outline" : "default"} onClick={()=>setProjectFilter("advertising")}>
+            <Button variant={projectFilter !== "advertising" ? "outline" : "default"} onClick={() => setProjectFilter("advertising")}>
               Advertising
             </Button>
-            <Button variant={projectFilter!== "architecture" ? "outline" : "default"} onClick={()=>setProjectFilter("architecture")}>
+            <Button variant={projectFilter !== "architecture" ? "outline" : "default"} onClick={() => setProjectFilter("architecture")}>
               Architecture
             </Button>
           </div>
@@ -107,46 +107,45 @@ export default function PortfolioPage() {
             {projects
               .filter((el) => projectFilter === "all" || el.category === projectFilter)
               .map((project) => (
-              <Card
-                key={project.id}
-                className="group overflow-hidden border hover:shadow-[4px_4px_0px_0px_rgba(255,204,0)] border-black transition-all duration-300"
-              >
-                <div className="relative overflow-hidden">
-                  <div className="aspect-[4/3] bg-gray-200">
-                    <div
-                      className="h-full w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
-                      style={{ backgroundImage: `url('${project.image}')` }}
-                    />
-                  </div>
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300" />
-                  <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <Button size="sm" >
-                      <ExternalLink className="h-4 w-4" />
-                    </Button>
-                  </div>
-                  <div className="absolute top-4 left-4">
-                    <span
-                      className={`px-3 py-1 rounded-full text-xs font-medium capitalize ${
-                        project.category === "interior design"
-                          ? "bg-amber-100 text-amber-800"
-                          : project.category === "advertising" ?  "bg-purple-100 text-purple-800" : "bg-green-100 text-green-800"
-                      }`}
-                    >
-                      {project.category}
-                    </span>
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <div className="space-y-2">
-                    <div className="flex items-center justify-between">
-                      <h3 className="text-xl font-semibold">{project.title}</h3>
-                      <span className="text-sm text-gray-500">{project.type}</span>
+                <Card
+                  key={project.id}
+                  className="group overflow-hidden border hover:shadow-[4px_4px_0px_0px_rgba(255,204,0)] border-black transition-all duration-300"
+                >
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-[4/3] bg-gray-200">
+                      <div
+                        className="h-full w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                        style={{ backgroundImage: `url('${project.image}')` }}
+                      />
                     </div>
-                    <p className="text-gray-600">{project.description}</p>
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300" />
+                    {/* <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <Button size="sm" >
+                        <ExternalLink className="h-4 w-4" />
+                      </Button>
+                    </div> */}
+                    <div className="absolute top-4 left-4">
+                      <span
+                        className={`px-3 py-1 rounded-full text-xs font-medium capitalize ${project.category === "interior design"
+                            ? "bg-amber-100 text-amber-800"
+                            : project.category === "advertising" ? "bg-purple-100 text-purple-800" : "bg-green-100 text-green-800"
+                          }`}
+                      >
+                        {project.category}
+                      </span>
+                    </div>
                   </div>
-                </CardContent>
-              </Card>
-            ))}
+                  <CardContent className="p-6">
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-between">
+                        <h3 className="text-xl font-semibold">{project.title}</h3>
+                        <span className="text-sm text-gray-500">{project.type}</span>
+                      </div>
+                      <p className="text-gray-600">{project.description}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
           </div>
         </div>
       </section>

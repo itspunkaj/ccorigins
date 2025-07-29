@@ -2,29 +2,19 @@ import Image from "next/image"
 
 const featuredIn = [
   {
-    title : "Elle Decor",
-    imgUrl : "https://seekvectorlogo.com/wp-content/uploads/2019/06/elle-decor-vector-logo.png",
+    title : "Entrepreneur",
+    imgUrl : "/images/interior-featured-in/Entrepreneur-India.jpeg",
     class : ""
   },
   {
-    title : "Falgunt Shane Peacock",
-    imgUrl : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRXSJaKrO7UE25L4k1CirVqWVVwzAxZm04vA&s",
+    title : "Dainik Bharat",
+    imgUrl : "/images/interior-featured-in/Dainik.jpeg",
     class : "!w-full"
   },
   {
-    title : "AD",
-    imgUrl : "https://www.architecturaldigest.in/verso/static/architecturaldigest-global/assets/logo-seo.png",
-    class : "!w-1/3"
-  },
-  {
-    title : "Vogue",
-    imgUrl : "https://upload.wikimedia.org/wikipedia/commons/f/f8/VOGUE_LOGO.svg",
+    title : "Startup India Magazine",
+    imgUrl : "/images/interior-featured-in/startup-india.jpeg",
     class : ""
-  },
-  {
-    title : "GQ",
-    imgUrl : "https://logovectorseek.com/wp-content/uploads/2019/12/gq-logo-vector.png",
-    class : "!w-2/3"
   },
   {
     title : "The Hindu",
@@ -37,7 +27,7 @@ export default function FeatureInSection () {
   return (
     <section className="container mx-auto md:px-6 my-20 flex flex-col gap-10">
       <h2 className="text-4xl text-center">Featured and Trusted by</h2>
-      <div className="grid grid-cols-2 gap-y-10 md:grid-cols-6 align-middle content-center ">
+      <div className="grid grid-cols-2 gap-y-10 md:grid-cols-4 align-middle content-center ">
         {
           featuredIn.map((element)=>{
             return (

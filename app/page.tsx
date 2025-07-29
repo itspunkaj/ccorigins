@@ -61,15 +61,16 @@ export default function ThreeDMarqueeDemoSecond() {
   ]
 
   return (
-    <div className="relative z-30 flex h-screen w-full  flex-col items-center justify-center overflow-hidden">
+    <div className="relative z-30 flex h-screen w-full  items-center justify-center overflow-hidden">
+      <div className="h-full flex flex-col py-32 md:py-48">
       <h2 className="relative z-20 mx-auto w-full text-center text-4xl leading-relaxed font-bold text-balance text-white md:text-4xl lg:text-6xl">
-        "One Studio,{" "}
+        One Studio,{" "}
         <span className="relative z-20 inline-block rounded-xl bg-yellow-500/40 px-4 py-1 text-white underline decoration-primaryYellow decoration-[6px] underline-offset-[16px] backdrop-blur-sm">
           Two Worlds
         </span>{" "}
-        of Creativity"
+        of Creativity
       </h2>
-      <div className="relative z-20 mx-auto max-w-3xl py-8 text-center text-md  md:text-2xl">
+      <div className="relative z-20 mx-auto max-w-3xl py-3 md:py-8 text-center text-md  md:text-2xl">
         <FlipWords className="text-slate-300" words={words} />
       </div>
 
@@ -122,6 +123,7 @@ export default function ThreeDMarqueeDemoSecond() {
         className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center"
         style={{ backgroundImage: "url('/bg.png')" }}
       />
+      </div>
       {/* <ThreeDMarquee
         className="pointer-events-none absolute inset-0 h-full w-full"
         images={images}

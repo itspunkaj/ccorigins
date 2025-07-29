@@ -12,7 +12,7 @@ export default function Navbar() {
 
   const navItems = [
     { name: "Home", href: "/" },
-    { name: "Interior Design", href: "/interior-design" },
+    { name: "Arc & Interior Design", href: "/interior-design" },
     { name: "Advertising", href: "/advertising" },
     { name: "Portfolio", href: "/portfolio" },
     { name: "Contact", href: "/contact" },

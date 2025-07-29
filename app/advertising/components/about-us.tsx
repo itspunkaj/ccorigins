@@ -17,41 +17,38 @@ import Counter from '@/components/ui/counter';
 
 
 const skills = [
-  { label: 'Digital Marketing', value: 85, color: 'bg-primaryYellow' },
-  { label: 'SEO & Backlinks', value: 90, color: 'bg-primaryYellow' },
-  { label: 'Design & Development', value: 95, color: 'bg-primaryYellow' },
+  { label: 'Advertising', value: 98, color: 'bg-primaryYellow' },
+  { label: 'Exhibits and Events', value: 96, color: 'bg-primaryYellow' },
+  { label: 'Development and Marketing', value: 95, color: 'bg-primaryYellow' },
 ];
 const catalogueData = [
   {
     id: 1,
     title: "Modern Bedroom Design",
-    image: "/images/architecture/villa-1.jpg",
+    image: "/images/portfolio/fashion.jpg",
   },
   {
     id: 2,
     title: "Minimalist Bedroom",
-    image: "/images/architecture/villa-2.jpg",
+    image: "/images/Kerala.jpg",
   },
   {
     id: 3,
     title: "Luxury Master Suite",
-    image: "/images/architecture/villa-3.jpg",
+    image: "/images/advertisements/Tufcon.png",
   },
   {
     id: 4,
-    title: "Cozy Bedroom Retreat",
-    image: "/images/architecture/villa-4.jpg",
+    title: "Luxury Master Suite",
+    image: "/images/kkr.jpg",
   },
   {
-    id: 1,
-    title: "Modern Bedroom Design",
-    image: "/images/architecture/villa-5.jpg",
+    id: 5,
+title: "Luxury Master Suite",
+    image: "/images/advertisements/Travel.png",
   },
-  {
-    id: 2,
-    title: "Minimalist Bedroom",
-    image: "/images/architecture/villa-6.jpg",
-  },
+
+
 ]
 
 export default function About() {
@@ -141,7 +138,7 @@ export default function About() {
 
             {/* Image Content */}
 
-            <div className='col-span-2 md:col-span-1 p-4 m-5 relative'>
+            <div className='col-span-2 md:col-span-1 md:p-4 md:m-5 relative'>
               <div className="absolute top-0 -left-5 w-6 h-1 bg-primaryYellow"></div>
               <div className="absolute top-0 -left-5 w-1 h-6 bg-primaryYellow"></div>
 
@@ -167,13 +164,13 @@ export default function About() {
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
                 // onAutoplayTimeLeft={onAutoplayTimeLeft}
-                className="architectSwiper"
+                className="architectSwiper h-full flex items-center justify-center"
               >
                 {
                   catalogueData.map((item, index) => {
                     return (
-                      <SwiperSlide className='!flex !items-center !justify-center '>
-                        <Image src={item.image} height={1000} width={1000} alt='image' className='my-auto mx-auto h-96 object-cover' />
+                      <SwiperSlide className='!flex !items-center !justify-center h-full '>
+                        <Image src={item.image} height={1000} width={1000} alt='image' className='my-auto mx-auto w-full object-cover ' />
                       </SwiperSlide>
                     )
                   })

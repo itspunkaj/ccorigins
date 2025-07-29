@@ -23,11 +23,11 @@ export default function WorkShowcase() {
     {
       id: 1,
       beforeImage: "https://res.cloudinary.com/do43v07fz/image/upload/v1751742002/apartment-before_ujd2k6.jpg",
-      afterImage: "https://res.cloudinary.com/do43v07fz/image/upload/v1751741902/apartment_y4cffi.jpg",
+      afterImage: "/images/interior-design-work-showcase/after-1.jpeg",
       clientChallenge:
         "I would love to design my new apartment so that it looks more unique and customized, and not so cookie-cutter.",
       result: "This apartment now captures my personality and style perfectly. Thank you, I love it!",
-      clientName: "Liz",
+      clientName: "Lisa Singh",
       rating: 5,
     },
     {
@@ -38,7 +38,7 @@ export default function WorkShowcase() {
         "My living room felt cramped and outdated. I wanted a modern, open space that would be perfect for entertaining guests.",
       result:
         "The transformation is incredible! My friends can't believe it's the same room. The space feels so much larger and more inviting.",
-      clientName: "Marcus",
+      clientName: "Abhishek Roy",
       rating: 5,
     },
     {
@@ -49,7 +49,7 @@ export default function WorkShowcase() {
         "Our kitchen was functional but lacked personality. We wanted something that reflected our love for cooking and hosting dinner parties.",
       result:
         "Now our kitchen is the heart of our home! Every meal feels special, and our guests always gravitate toward this beautiful space.",
-      clientName: "Sarah & Tom",
+      clientName: "Gurpreet & Priyanka",
       rating: 4,
     },
   ]

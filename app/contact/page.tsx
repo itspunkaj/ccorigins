@@ -11,12 +11,12 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+1 (555) 123-4567", "+1 (555) 987-6543"],
+      details: ["+91 93319 99111"],
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["hello@CCORIGINS.com", "projects@CCORIGINS.com"],
+      details: ["info@ccorigins.com"],
     },
     {
       icon: MapPin,
@@ -68,22 +68,22 @@ export default function ContactPage() {
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div className="space-y-2">
                     <Label htmlFor="firstName">First Name</Label>
-                    <Input id="firstName" placeholder="John" />
+                    <Input id="firstName"  />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="lastName">Last Name</Label>
-                    <Input id="lastName" placeholder="Doe" />
+                    <Input id="lastName"  />
                   </div>
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="john@example.com" />
+                  <Input id="email" type="email"  />
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="phone">Phone</Label>
-                  <Input id="phone" type="tel" placeholder="+1 (555) 123-4567" />
+                  <Input id="phone" type="tel"  />
                 </div>
 
                 <div className="space-y-2">
@@ -93,15 +93,25 @@ export default function ContactPage() {
                       <SelectValue placeholder="Select a service" />
                     </SelectTrigger>
                     <SelectContent>
+                      <SelectItem value="architectural-design">Architectural Design</SelectItem>
                       <SelectItem value="interior-design">Interior Design</SelectItem>
-                      <SelectItem value="advertising">Advertising & Marketing</SelectItem>
-                      <SelectItem value="both">Both Services</SelectItem>
+                      <SelectItem value="architecture-and-interior-design">Architecture & Interior Design</SelectItem>
+                      <SelectItem value="advertising">Advertising</SelectItem>
+                      <SelectItem value="event-management">Event Management</SelectItem>
+                      <SelectItem value="exhibits">Exhibit</SelectItem>
+                      <SelectItem value="marketing">Offline and Online Marketing</SelectItem>
+                      <SelectItem value="web-development">Web Development</SelectItem>
                       <SelectItem value="consultation">Consultation Only</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
 
                 <div className="space-y-2">
+                  <Label htmlFor="budget">Budget Range</Label>
+                  <Input id="budget"  />
+                </div>
+
+                {/* <div className="space-y-2">
                   <Label htmlFor="budget">Project Budget</Label>
                   <Select>
                     <SelectTrigger>
@@ -115,7 +125,7 @@ export default function ContactPage() {
                       <SelectItem value="over-100k">Over $100,000</SelectItem>
                     </SelectContent>
                   </Select>
-                </div>
+                </div> */}
 
                 <div className="space-y-2">
                   <Label htmlFor="message">Project Details</Label>
@@ -171,7 +181,7 @@ export default function ContactPage() {
                   <div className="absolute inset-0 bg-gradient-to-br from-amber-100/50 to-purple-100/50" />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1946.1987957183899!2d88.3526550421083!3d22.618262362393093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89d7b6834bbdf%3A0xb259d59b0cf2f5be!2sGovernment%20Quarters%2C%20Vivekananda%20Colony%2C%20Belur%2C%20Howrah%2C%20West%20Bengal%20711202!5e0!3m2!1sen!2sin!4v1753624882852!5m2!1sen!2sin" height="320" width="600" allowFullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                  </div>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1946.1987957183899!2d88.3526550421083!3d22.618262362393093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89d7b6834bbdf%3A0xb259d59b0cf2f5be!2sGovernment%20Quarters%2C%20Vivekananda%20Colony%2C%20Belur%2C%20Howrah%2C%20West%20Bengal%20711202!5e0!3m2!1sen!2sin!4v1753624882852!5m2!1sen!2sin" height="320" width="600" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>                  </div>
                   </div>
                   </div>
               </div>

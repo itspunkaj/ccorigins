@@ -8,40 +8,40 @@ interface client {
 
 const clients: client[] = [
   {
-    name: "August AI",
-    imgUrl: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png",
+    name: "Vector",
+    imgUrl: "/images/interior-design-clients/vector.jpeg",
     class: ""
   },
   {
-    name: "Skoob.ai",
-    imgUrl: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png",
+    name: "RDP",
+    imgUrl: "/images/interior-design-clients/RDP.jpeg",
     class: ""
   },
   {
-    name: "StarSpark AI",
-    imgUrl: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png",
+    name: "BLR",
+    imgUrl: "/images/interior-design-clients/BLR.jpeg",
     class: ""
   },
   {
-    name: "Yoso",
-    imgUrl: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png",
-    class: ""
+    name: "CRM",
+    imgUrl: "/images/interior-design-clients/CRM.jpeg",
+    class: "w-5/12"
   },
-  {
-    name: "Saint Gobain",
-    imgUrl: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png",
-    class: ""
-  },
-  {
-    name: "Dover",
-    imgUrl: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png",
-    class: ""
-  },
-  {
-    name: "Forbes Marshall",
-    imgUrl: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png",
-    class: ""
-  },
+  // {
+  //   name: "Sharma",
+  //   imgUrl: "/images/interior-design-clients/sharma.jpeg",
+  //   class: ""
+  // },
+  // {
+  //   name: "Dover",
+  //   imgUrl: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png",
+  //   class: ""
+  // },
+  // {
+  //   name: "Forbes Marshall",
+  //   imgUrl: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png",
+  //   class: ""
+  // },
 ]
 
 export default function ClientCarouselSection() {

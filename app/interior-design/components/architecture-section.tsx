@@ -12,6 +12,7 @@ import './styles.css';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 import { useRef } from 'react';
+import { Button } from '@/components/ui/button';
 
 const catalogueData = [
   {
@@ -73,17 +74,17 @@ export default function ArchitectureSection() {
         </div>
         <div className='grid grid-cols-2'>
           <div className='col-span-2 p-4 relative md:col-span-1'>
-            <div className="absolute top-0 -left-10 w-6 h-1 bg-primaryYellow"></div>
-            <div className="absolute top-0 -left-10 w-1 h-6 bg-primaryYellow"></div>
+            <div className="absolute top-0 left-0 w-6 h-1 bg-primaryYellow"></div>
+            <div className="absolute top-0 left-0 w-1 h-6 bg-primaryYellow"></div>
 
-            <div className="absolute top-0 -right-10 w-6 h-1 bg-primaryYellow"></div>
-            <div className="absolute top-0 -right-10 w-1 h-6 bg-primaryYellow"></div>
+            <div className="absolute top-0 right-0 w-6 h-1 bg-primaryYellow"></div>
+            <div className="absolute top-0 right-0 w-1 h-6 bg-primaryYellow"></div>
 
-            <div className="absolute bottom-0 -left-10 w-6 h-1 bg-primaryYellow"></div>
-            <div className="absolute bottom-0 -left-10 w-1 h-6 bg-primaryYellow"></div>
+            <div className="absolute bottom-0 left-0 w-6 h-1 bg-primaryYellow"></div>
+            <div className="absolute bottom-0 left-0 w-1 h-6 bg-primaryYellow"></div>
 
-            <div className="absolute bottom-0 -right-10 w-6 h-1 bg-primaryYellow"></div>
-            <div className="absolute bottom-0 -right-10 w-1 h-6 bg-primaryYellow"></div>
+            <div className="absolute bottom-0 right-0 w-6 h-1 bg-primaryYellow"></div>
+            <div className="absolute bottom-0 right-0 w-1 h-6 bg-primaryYellow"></div>
             <Swiper
               spaceBetween={30}
               centeredSlides={true}
@@ -119,17 +120,20 @@ export default function ArchitectureSection() {
           </div>
           <div className="col-span-2 md:col-span-1 space-y-4 mx-auto my-auto h-full w-full md:py-10 md:px-20 p-4">
             <h3 className="text-lg font-semibold text-gray-200">Modern Minimalist</h3>
-            <p className="text-sm text-gray-300">
+            <p className="text-md text-gray-300">
               Clean lines, open spaces, and a neutral palette define our minimalist designs. Each project is tailored to enhance natural light and functional elegance.
             </p>
-            <ul className="list-disc list-inside text-sm text-gray-600">
+            <ul className="list-disc list-inside text-gray-600">
               <li>Open-concept layouts</li>
               <li>Natural material accents</li>
               <li>Smart storage integration</li>
             </ul>
-            <a href="/projects/minimalist" className="inline-block text-primaryYellow hover:underline text-sm font-medium">
-              View Project →
+            <Button>
+
+            <a href="/projects/minimalist">
+              View Project
             </a>
+            </Button>
           </div>
 
         </div>

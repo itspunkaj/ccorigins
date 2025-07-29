@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CTASection() {
   return (
@@ -16,7 +17,9 @@ export default function CTASection() {
                 Book A Consultation
               </Button>
               <Button variant={"outline"} size={"lg"} className=" uppercase group hover:bg-transparent hover:border-black">
-                Contact Us
+                <Link href={"/contact"}>
+                  Contact Us
+                </Link>
                 <ArrowRight className="group-hover:translate-x-1 transition-all duration-150" />
               </Button>
             </div>

@@ -4,38 +4,38 @@ export default function TestimonialSection() {
   const testimonials = [
     {
       quote:
+      "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
+      name: "ILS Hopspital",
+      designation: "Kolkata",
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGWyOdwT7NXvI4rvhz_Ss57Q6LL-8RDG0MtQ&s",
+    },
+    {
+      quote:
+      "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
+      name: "Tufcon",
+      designation: "Pan India",
+      src: "https://5.imimg.com/data5/SELLER/Default/2025/2/487084354/ZN/BJ/RR/130707388/tufcon-tmt-bars-500x500.jpeg",
+    },
+    {
+      quote:
+      "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
+      name: "Himalaya Optical",
+      designation: "Kolkata",
+      src: "https://media.licdn.com/dms/image/v2/C560BAQECBxfNzL9m-A/company-logo_200_200/company-logo_200_200/0/1643007343898/himalaya_optical_logo?e=2147483647&v=beta&t=k0kAO_7PCCnAi7s4KFLXa573eTrUzONtLsIzG8xOIYM",
+    },
+    {
+      quote:
         "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      name: "Vyana Wealth",
+      designation: "Pan India",
+      src: "https://content3.jdmagicbox.com/comp/kolkata/h4/033pxx33.xx33.141121180030.t8h4/catalogue/vyana-wealth-bhawanipur-kolkata-wealth-management-services-x3yxer642f.jpg",
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
+      name: "Alwan & Al Khait",
+      designation: "Dubai",
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3zSU05ZDdUzOT65Y20KjVoCT_2k4okz-V5OO42UFEAw&s",
     },
   ];
   return <AnimatedTestimonials testimonials={testimonials} />;

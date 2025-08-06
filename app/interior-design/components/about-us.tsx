@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function AboutUs() {
   return (
@@ -23,7 +24,7 @@ export default function AboutUs() {
               At CCO when we take on a project, we also take on the
               responsibility not just of aesthetics, but functionality
               as well.
-              <br/><br/>
+              <br /><br />
               We at CCO work with a user-centric philosophy, based on
               listening to our clients & providing innovative solutions,
               on schedule, within budget. We encourage continuous
@@ -32,8 +33,10 @@ export default function AboutUs() {
               Our approach to design is tailor made to the owner's program,
               scope, time line and economy. Good design is truly innovative,
               eminently sensible and source of inspiration for.
-              </p>
-            <Button className="mt-10 md:w-1/3 py-3 rounded-sm uppercase bg-transparent text-black border border-black h-12">Learn More</Button>
+            </p>
+            <Link href={"/contact"}>
+              <Button className="mt-10 md:w-1/3 py-3 rounded-sm uppercase bg-transparent text-black border border-black h-12">Learn More</Button>
+            </Link>
           </div>
         </div>
 

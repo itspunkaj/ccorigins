@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -23,7 +24,7 @@ export default function HeroSection() {
       title: "SKYLINE PENTHOUSES",
       subtitle: "Panoramic Views, Premium Interiors",
       badge: "EXCLUSIVE DESIGN",
-      image:"https://res.cloudinary.com/do43v07fz/image/upload/v1751737590/bathtub_phuap9.jpg",
+      image: "https://res.cloudinary.com/do43v07fz/image/upload/v1751737590/bathtub_phuap9.jpg",
     },
   ]
 
@@ -65,12 +66,14 @@ export default function HeroSection() {
           </p>
 
           {/* CTA Button */}
-          <Button
-            variant="outline"
-            className="border-white text-black hover:bg-transparent hover:text-white  px-8 py-3 text-sm font-medium tracking-wider"
-          >
-            LEARN MORE
-          </Button>
+          <Link href="/contact">
+            <Button
+              variant="outline"
+              className="border-white text-black hover:bg-transparent hover:text-white  px-8 py-3 text-sm font-medium tracking-wider"
+            >
+              LEARN MORE
+            </Button>
+          </Link>
         </div>
       </div>
 
@@ -80,9 +83,8 @@ export default function HeroSection() {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentSlide ? "bg-white" : "bg-white/40 hover:bg-white/60"
-            }`}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide ? "bg-white" : "bg-white/40 hover:bg-white/60"
+              }`}
           />
         ))}
       </div>
@@ -93,9 +95,8 @@ export default function HeroSection() {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`block w-1 h-16 transition-all duration-300 ${
-              index === currentSlide ? "bg-white" : "bg-white/30 hover:bg-white/50"
-            }`}
+            className={`block w-1 h-16 transition-all duration-300 ${index === currentSlide ? "bg-white" : "bg-white/30 hover:bg-white/50"
+              }`}
           />
         ))}
       </div>

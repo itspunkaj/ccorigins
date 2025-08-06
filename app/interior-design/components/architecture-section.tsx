@@ -13,6 +13,7 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 import { useRef } from 'react';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 const catalogueData = [
   {
@@ -68,7 +69,7 @@ export default function ArchitectureSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-light  mb-4">Architecture That Speaks Style</h2>
-          <p className="text-gray-500 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto">
             Step into spaces that inspire. From cozy corners to bold open plans, our interiors are designed to make you feel something — every single day.
           </p>
         </div>
@@ -118,21 +119,23 @@ export default function ArchitectureSection() {
               </div> */}
             </Swiper>
           </div>
-          <div className="col-span-2 md:col-span-1 space-y-4 mx-auto my-auto h-full w-full md:py-10 md:px-20 p-4">
-            <h3 className="text-lg font-semibold text-gray-200">Modern Minimalist</h3>
-            <p className="text-md text-gray-300">
-              Clean lines, open spaces, and a neutral palette define our minimalist designs. Each project is tailored to enhance natural light and functional elegance.
-            </p>
-            <ul className="list-disc list-inside text-gray-600">
-              <li>Open-concept layouts</li>
-              <li>Natural material accents</li>
-              <li>Smart storage integration</li>
-            </ul>
-            <Button>
+          <div className="col-span-2 md:col-span-1 space-y-8 mx-auto my-auto h-full w-full md:py-10 md:px-20 p-4">
+            <h3 className="text-2xl font-medium text-gray-200">Modern Minimalist</h3>
+            <div className='mb-10'>
 
-            <a href="/projects/minimalist">
-              View Project
-            </a>
+              <p className="text-lg text-gray-300">
+                Clean lines, open spaces, and a neutral palette define our minimalist designs. Each project is tailored to enhance natural light and functional elegance.
+              </p>
+              <ul className="list-disc list-inside text-gray-200 text-lg">
+                <li>Open-concept layouts</li>
+                <li>Natural material accents</li>
+                <li>Smart storage integration</li>
+              </ul>
+            </div>
+            <Button className=''>
+              <Link href="/contact">
+                View Project
+              </Link>
             </Button>
           </div>
 

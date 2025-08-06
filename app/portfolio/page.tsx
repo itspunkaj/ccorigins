@@ -3,6 +3,7 @@ import { ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { useState } from "react"
+import Link from "next/link"
 
 type ProjectFilter = "all" | "advertising" | "interior design" | "architecture";
 
@@ -127,8 +128,8 @@ export default function PortfolioPage() {
                     <div className="absolute top-4 left-4">
                       <span
                         className={`px-3 py-1 rounded-full text-xs font-medium capitalize ${project.category === "interior design"
-                            ? "bg-amber-100 text-amber-800"
-                            : project.category === "advertising" ? "bg-purple-100 text-purple-800" : "bg-green-100 text-green-800"
+                          ? "bg-amber-100 text-amber-800"
+                          : project.category === "advertising" ? "bg-purple-100 text-purple-800" : "bg-green-100 text-green-800"
                           }`}
                       >
                         {project.category}
@@ -160,9 +161,11 @@ export default function PortfolioPage() {
             <p className="text-xl opacity-90">
               Let's discuss how we can bring your vision to life with our expertise in design and advertising.
             </p>
-            <Button size="lg" variant="secondary" className="bg-white text-amber-600 hover:bg-gray-100">
-              Start Your Project
-            </Button>
+              <Button size="lg" variant="outline" >
+            <Link href={"/contact"} className="">
+                Start Your Project
+            </Link>
+              </Button>
           </div>
         </div>
       </section>

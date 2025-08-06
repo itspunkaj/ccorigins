@@ -1,3 +1,4 @@
+"use client"
 import { Mail, Phone, MapPin, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -5,8 +6,10 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { useState } from "react"
 
 export default function ContactPage() {
+  const [interestedService, setInterestedService] = useState<string>('');
   const contactInfo = [
     {
       icon: Phone,
@@ -64,31 +67,34 @@ export default function ContactPage() {
                 </p>
               </div>
 
-              <form className="space-y-6">
+              <form className="space-y-6" action={"https://formsubmit.co/info@ccorigins.com"} method="POST">
+                <input type="hidden" name="Services Interested" value={interestedService}/>
+                <input type="hidden" name="_next" value={`https://ccorigins.com/thank-you`} />
+                <input type="hidden" name="_captcha" value="false" />
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div className="space-y-2">
                     <Label htmlFor="firstName">First Name</Label>
-                    <Input id="firstName"  />
+                    <Input id="firstName" />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="lastName">Last Name</Label>
-                    <Input id="lastName"  />
+                    <Input id="lastName" />
                   </div>
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email"  />
+                  <Input id="email" type="email" />
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="phone">Phone</Label>
-                  <Input id="phone" type="tel"  />
+                  <Input id="phone" type="tel" />
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="service">Service Interested In</Label>
-                  <Select>
+                  <Select value={interestedService} onValueChange={(val) => setInterestedService(val)}>
                     <SelectTrigger>
                       <SelectValue placeholder="Select a service" />
                     </SelectTrigger>
@@ -108,7 +114,7 @@ export default function ContactPage() {
 
                 <div className="space-y-2">
                   <Label htmlFor="budget">Budget Range</Label>
-                  <Input id="budget"  />
+                  <Input id="budget" />
                 </div>
 
                 {/* <div className="space-y-2">
@@ -183,7 +189,7 @@ export default function ContactPage() {
                     <div className="text-center">
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1946.1987957183899!2d88.3526550421083!3d22.618262362393093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89d7b6834bbdf%3A0xb259d59b0cf2f5be!2sGovernment%20Quarters%2C%20Vivekananda%20Colony%2C%20Belur%2C%20Howrah%2C%20West%20Bengal%20711202!5e0!3m2!1sen!2sin!4v1753624882852!5m2!1sen!2sin" height="320" width="600" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>                  </div>
                   </div>
-                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -128,7 +128,7 @@ export default function About() {
               <Button>
 
                 <Link
-                  href="/about"
+                  href="/contact"
                 // className="inline-block mt-6 px-6 py-3 bg-blue-600 text-white text-sm font-medium rounded-full hover:bg-blue-700 transition"
                 >
                   Read More

@@ -14,7 +14,9 @@ export default function CTASection() {
 
             <div className="py-5 flex flex-col md:flex-row gap-4">
               <Button size={"lg"} className="">
-                Book A Consultation
+                <Link href={'/contact'}>
+                  Book A Consultation
+                </Link>
               </Button>
               <Button variant={"outline"} size={"lg"} className=" uppercase group hover:bg-transparent hover:border-black">
                 <Link href={"/contact"}>

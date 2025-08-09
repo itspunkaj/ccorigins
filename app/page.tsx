@@ -54,6 +54,7 @@ export default function ThreeDMarqueeDemoSecond() {
   };
 
   const words = [
+    "Defining Leadership.",
     "Designing spaces that inspire and elevate.",
     "Ideas that spark attention and create impact.",
     "Timeless interiors, tailored for your lifestyle.",

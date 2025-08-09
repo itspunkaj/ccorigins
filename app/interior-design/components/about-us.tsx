@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function AboutUs() {
   return (
-    <div className="w-full">
+    <div className="w-full bg-white">
       <div className="flex flex-col md:flex-row h-4/5 container mx-auto px-4 py-6 md:p-10">
         <div className="h-full max-md:order-last md:py-10 my-4 md:my-0 flex items-center justify-center md:w-1/2 overflow-hidden">
           <video className="w-full h-auto object-cover"

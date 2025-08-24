@@ -11,6 +11,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily : {
+        cinzel : ["Cinzel","serif"],
+        bahn : ["Bahnschrift","Helvetica","sans-serif"],
+      },
       colors: {
         primaryYellow: "#FFCC00",
         background: "hsl(var(--background))",

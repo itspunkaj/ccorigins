@@ -2,125 +2,77 @@
 import React, { useState } from "react";
 import { ThreeDMarquee } from "@/components/ui/3d-marquee";
 import { Button } from "@/components/ui/button";
-import { motion } from 'framer-motion';
-import { ArrowRight } from "lucide-react";
-import { FlipWords } from "@/components/ui/flip-words";
 import Image from "next/image";
+import Link from "next/link";
 
-export default function ThreeDMarqueeDemoSecond() {
-  const images = [
-    "/images/apartment.jpg",
-    "/images/advertisements/ILS.png",
-    "/images/architecture/villa-1.png",
-    "/images/advertisements/Travel.png",
-    "/images/bathroom.jpg",
-    "/images/advertisements/saluja.png",
-    "/images/architecture/villa-2.png",
-    "https://assets.aceternity.com/flip-text.png",
-    "https://assets.aceternity.com/hero-highlight.png",
-    "https://assets.aceternity.com/carousel.webp",
-    "https://assets.aceternity.com/placeholders-and-vanish-input.png",
-    "https://assets.aceternity.com/shooting-stars-and-stars-background.png",
-    "https://assets.aceternity.com/signup-form.png",
-    "https://assets.aceternity.com/cloudinary_bkp/stars_sxle3d.png",
-    "https://assets.aceternity.com/spotlight-new.webp",
-    "https://assets.aceternity.com/cloudinary_bkp/Spotlight_ar5jpr.png",
-    "https://assets.aceternity.com/cloudinary_bkp/Parallax_Scroll_pzlatw_anfkh7.png",
-    "https://assets.aceternity.com/tabs.png",
-    "https://assets.aceternity.com/cloudinary_bkp/Tracing_Beam_npujte.png",
-    "https://assets.aceternity.com/cloudinary_bkp/typewriter-effect.png",
-    "https://assets.aceternity.com/glowing-effect.webp",
-    "https://assets.aceternity.com/hover-border-gradient.png",
-    "https://assets.aceternity.com/cloudinary_bkp/Infinite_Moving_Cards_evhzur.png",
-    "https://assets.aceternity.com/cloudinary_bkp/Lamp_hlq3ln.png",
-    "https://assets.aceternity.com/macbook-scroll.png",
-    "https://assets.aceternity.com/cloudinary_bkp/Meteors_fye3ys.png",
-    "https://assets.aceternity.com/cloudinary_bkp/Moving_Border_yn78lv.png",
-    "https://assets.aceternity.com/multi-step-loader.png",
-    "https://assets.aceternity.com/vortex.png",
-    "https://assets.aceternity.com/wobble-card.png",
-    "https://assets.aceternity.com/world-map.webp",
-  ];
+const images = [
+    {
+        id: "1",
+        alt: "bedroom",
+        imgUrl: "/images/new-homepage/PNG/Bedroom.png",
+        class: "top-0 left-0"
+    },
+    {
+        id: "2",
+        alt: "advertising",
+        imgUrl: "/images/new-homepage/PNG/Advertising.png",
+        class: "top-0 right-0"
+    },
+    {
+        id: "3",
+        alt: "banglow",
+        imgUrl: "/images/new-homepage/PNG/Banglow.png",
+        class: "bottom-0 left-0"
+    },
+    {
+        id: "4",
+        alt: "pavilion",
+        imgUrl: "/images/new-homepage/PNG/Pavilion.png",
+        class: "bottom-0 right-0"
+    },
+]
 
-  const arrowVariants = {
-    hover: {
-      x: 4,
-      transition: {
-        duration: 0.3,
-        ease: "easeInOut"
-      }
-    }
-  };
-
-  const words =[
-    "Designing spaces that inspire and elevate.",
-"Ideas that spark attention and create impact.",
-"Timeless interiors, tailored for your lifestyle.",
-"Campaigns that connect, events that captivate.",
-  ]
-
-  return (
-    <div className="relative z-30 flex h-screen w-full  flex-col items-center justify-center overflow-hidden">
-      <h2 className="relative z-20 mx-auto w-full text-center text-2xl font-bold text-balance text-white md:text-4xl lg:text-6xl">
-        "One Studio,{" "}
-        <span className="relative z-20 inline-block rounded-xl bg-yellow-500/40 px-4 py-1 text-white underline decoration-primaryYellow decoration-[6px] underline-offset-[16px] backdrop-blur-sm">
-          Two Worlds
-        </span>{" "}
-        of Creativity"
-      </h2>
-      <div className="relative z-20 mx-auto max-w-3xl py-8 text-center  text-2xl">
-        <FlipWords className="text-slate-300" words={words}/>
-      </div>
-
-      <div className="relative z-20 flex flex-wrap items-center justify-center gap-4 pt-4">
-        {/* Button 1: Outline on hover */}
-        {(() => {
-          const [hovered, setHovered] = React.useState(false);
-          return (
-            <motion.div className="mt-auto">
-              <Button
-                variant={hovered ? "default" : "outline"}
-                onMouseEnter={() => setHovered(true)}
-                onMouseLeave={() => setHovered(false)}
-              >
-                View Architecture & Interiors
-                <motion.div variants={arrowVariants}>
-                  <ArrowRight size={18} />
-                </motion.div>
-              </Button>
-            </motion.div>
-          );
-        })()}
-        {/* Button 2: Outline on hover */}
-        {(() => {
-          const [hovered, setHovered] = React.useState(false);
-          return (
-            <motion.div className="mt-auto">
-              <Button
-                variant={hovered ? "default" : "outline"}
-                onMouseEnter={() => setHovered(true)}
-                onMouseLeave={() => setHovered(false)}
-              >
-                View Ads & Events
-                <motion.div variants={arrowVariants}>
-                  <ArrowRight size={18} />
-                </motion.div>
-              </Button>
-            </motion.div>
-          );
-        })()}
-      </div>
-
-      {/* overlay */}
-      <div className="absolute inset-0 z-10 h-full w-full bg-black/40" />
-      <div
-        className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center"
-        style={{ backgroundImage: "url('/bg.png')" }}
-      />
-      {/* <ThreeDMarquee
-        className="pointer-events-none absolute inset-0 h-full w-full"
-        images={images}
-      /> */}
-    </div>
-  );
+export default function Page() {
+    return (
+        <section className="h-[120dvh] bg-trasparent w-full flex flex-col">
+            <div className="h-[80%] w-full">
+                <div className="relative h-full w-full">
+                    {
+                        images.map((img) => <Image key={img.id} src={img.imgUrl} height={500} width={800} alt={img.alt} className={`-z-10 h-1/2 w-1/2 object-cover absolute ${img.class}`} />)
+                    }
+                    <Image src={"/images/new-homepage/PNG/Lamp.png"} height={400} width={200} alt="lamp" className="absolute top-0 right-1/2 z-40 translate-x-1/2 object-cover w-[300%] md:w-[45%] " />
+                    <div className="absolute bottom-0 h-1/2 w-full flex items-center justify-center flex-col ">
+                        <div className="max-w-7xl text-yellow-50  w-full h-full flex flex-col items-center justify-center">
+                            <div className="h-1/3 flex font-bahn flex-col items-center justify-start">
+                                <h1 className="text-4xl font-thin tracking-widest">creative catalyst</h1>
+                                <h2 className="text-lg capitalize">Defining Leadership 360 degree</h2>
+                            </div>
+                            <div className="flex-1 uppercase font-cinzel flex flex-col items-center justify-start">
+                                <h1 className="text-3xl md:text-5xl font-semibold mb-4 text-center ">Creativity is our hallmark!</h1>
+                                <h2 className="text-lg md:text-3xl font-thin text-center max-w-3xl">We bring charm from both the world Ideation & concept to execution</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="absolute -bottom-1.5 max-w-7xl h-3 w-full bg-primaryYellow right-1/2 translate-x-1/2"></div>
+                </div>
+            </div>
+            <div className="flex-1 flex flex-col relative bg-white items-center justify-center">
+                <div className="flex absolute right-1/2 translate-x-1/2 top-0 -translate-y-1/2 max-w-7xl items-center justify-center md:space-x-1">
+                <Link href={"/interior-design"}>
+                    <Button variant={"home"} className="rounded-r-full hover:shadow-2">
+                        Architect & Interior
+                    </Button>
+                </Link>
+                <Link href={"/advertising"}>
+                    <Button variant={"home"} className="rounded-l-full ">
+                        Advertising & Event
+                    </Button>
+                </Link>
+                </div>
+                <div className="flex items-center justify-center">
+                    <Image src={"/images/new-homepage/PNG/L_Complete.png"} alt="Logo" height={500} width={800} className="w-1/2 object-cover"/>
+                </div>
+            </div>
+        </section>
+    )
 }

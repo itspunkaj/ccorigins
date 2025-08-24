@@ -1,72 +1,76 @@
+"use client";
+import React, { useState } from "react";
+import { ThreeDMarquee } from "@/components/ui/3d-marquee";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { motion } from 'framer-motion';
-import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
+const images = [
+    {
+        id: "1",
+        alt: "bedroom",
+        imgUrl: "/images/new-homepage/PNG/Bedroom.png",
+        class: "top-0 left-0"
+    },
+    {
+        id: "2",
+        alt: "advertising",
+        imgUrl: "/images/new-homepage/PNG/Advertising.png",
+        class: "top-0 right-0"
+    },
+    {
+        id: "3",
+        alt: "banglow",
+        imgUrl: "/images/new-homepage/PNG/Banglow.png",
+        class: "bottom-0 left-0"
+    },
+    {
+        id: "4",
+        alt: "pavilion",
+        imgUrl: "/images/new-homepage/PNG/Pavilion.png",
+        class: "bottom-0 right-0"
+    },
+]
+
 export default function Page() {
-
-    const arrowVariants = {
-        hover: {
-            x: 4,
-            transition: {
-                duration: 0.3,
-                ease: "easeInOut"
-            }
-        }
-    };
     return (
-        <section className="h-screen w-screen relative">
-
-            <div className="z-10 bg-transparent max-md:hidden md:h-40 md:w-40 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 rounded-full overflow-hidden">
-                <Image src={"/images/logo.jpeg"} height={300} width={300} alt="logo" className="mix-blend-multiply" />
-            </div>
-            <div className="grid md:grid-cols-2 h-full w-full overflow-hidden">
-                <div className="bg-primaryYellow h-full w-full relative ">
-                    {/* <div className='absolute top-0 left-0 w-full h-full bg-black opacity-10'>
-                    </div> */}
-                    <div className='absolute bottom-10 right-96 h-48 w-48 transparent rounded-full border-8 border-white border-opacity-20'>
+        <section className="h-[120dvh] bg-trasparent w-full flex flex-col">
+            <div className="h-[80%] w-full">
+                <div className="relative h-full w-full">
+                    {
+                        images.map((img) => <Image key={img.id} src={img.imgUrl} height={500} width={800} alt={img.alt} className={`-z-10 h-1/2 w-1/2 object-cover absolute ${img.class}`} />)
+                    }
+                    <Image src={"/images/new-homepage/PNG/Lamp.png"} height={400} width={200} alt="lamp" className="absolute top-0 right-1/2 z-40 translate-x-1/2 object-cover w-[300%] md:w-[45%] " />
+                    <div className="absolute bottom-0 h-1/2 w-full flex items-center justify-center flex-col ">
+                        <div className="max-w-7xl text-yellow-50  w-full h-full flex flex-col items-center justify-center">
+                            <div className="h-1/3 flex font-bahn flex-col items-center justify-start">
+                                <h1 className="text-4xl font-thin tracking-widest">creative catalyst</h1>
+                                <h2 className="text-lg capitalize">Defining Leadership 360 degree</h2>
+                            </div>
+                            <div className="flex-1 uppercase font-cinzel flex flex-col items-center justify-start">
+                                <h1 className="text-3xl md:text-5xl font-semibold mb-4 text-center ">Creativity is our hallmark!</h1>
+                                <h2 className="text-lg md:text-3xl font-thin text-center max-w-3xl">We bring charm from both the world Ideation & concept to execution</h2>
+                            </div>
+                        </div>
                     </div>
-                    <div className='absolute bottom-[350px] left-[350px] h-48 w-48 transparent rounded-full border-[24px] border-white border-opacity-30'>
-                    </div>
-                    <div className='absolute bottom-[200px] left-[400px] h-96 w-96 transparent rounded-full border-[48px] border-white border-opacity-10'>
-                    </div>
-                    <div className='absolute bottom-32 right-96 h-[300px] w-[300px] transparent rounded-full border-8 border-white border-dotted border-opacity-30'>
-                    </div>
-                    <div className="h-2/3 w-full bg-transparent rounded-full overflow-hidden absolute -translate-x-1/4 translate-y-2 outline outline-2 outline-black outline-offset-4 ">
-                        <Image src={"/images/yellow-bed.jpg"} width={1000} height={600} alt="bed" className="object-cover h-full shadow-sm" />
-                    </div>
-                    <div className="absolute bottom-0 left-0  w-4/5 h-1/3 flex items-center justify-center">
-                        <Link href={"/interior-design"}>
-                            <Button className="rounded-full md:h-16 md:px-10" variant={"outline"}>
-                                Architecture & Interiors
-                                <ArrowRight size={18} />
-                            </Button>
-                        </Link>
-                    </div>
+                    <div className="absolute -bottom-1.5 max-w-7xl h-3 w-full bg-primaryYellow right-1/2 translate-x-1/2"></div>
                 </div>
-                <div className="bg-white h-full w-full relative">
-                    {/* <div className='absolute top-0 left-0 w-full h-full bg-black opacity-10'>
-                    </div> */}
-                    <div className='absolute top-10 right-96 h-48 w-48 transparent rounded-full border-8 border-primaryYellow border-opacity-20'>
-                    </div>
-                    <div className='absolute top-[350px] left-[350px] h-48 w-48 transparent rounded-full border-[24px] border-primaryYellow border-opacity-30'>
-                    </div>
-                    <div className='absolute -top-20 left-[400px] h-96 w-96 transparent rounded-full border-[48px] border-primaryYellow border-opacity-10'>
-                    </div>
-                    <div className='absolute top-32 right-96 h-[300px] w-[300px] transparent rounded-full border-8 border-primaryYellow border-dotted border-opacity-30'>
-                    </div>
-                    <div className="absolute top-0 right-0 w-4/5 h-1/3 flex items-center justify-center">
-                        <Link href={"/advertising"}>
-                            <Button className="rounded-full md:h-16 md:px-10">
-                                Advertisements & Events
-                                <ArrowRight size={18} />
-                            </Button>
-                        </Link>
-                    </div>
-                    <div className="h-2/3 w-full absolute bottom-0 right-0  bg-transparent rounded-full overflow-hidden translate-x-1/4 -translate-y-2 outline outline-2 outline-black outline-offset-4 ">
-                        <Image src={"/images/time-square.jpg"} width={1000} height={600} alt="bed" className="object-cover h-full" />
-                    </div>
+            </div>
+            <div className="flex-1 flex flex-col relative bg-white items-center justify-center">
+                <div className="flex absolute right-1/2 translate-x-1/2 top-0 -translate-y-1/2 max-w-7xl items-center justify-center md:space-x-1">
+                <Link href={"/interior-design"}>
+                    <Button variant={"home"} className="rounded-r-full hover:shadow-2">
+                        Architect & Interior
+                    </Button>
+                </Link>
+                <Link href={"/advertising"}>
+                    <Button variant={"home"} className="rounded-l-full ">
+                        Advertising & Event
+                    </Button>
+                </Link>
+                </div>
+                <div className="flex items-center justify-center">
+                    <Image src={"/images/new-homepage/PNG/L_Complete.png"} alt="Logo" height={500} width={800} className="w-1/2 object-cover"/>
                 </div>
             </div>
         </section>

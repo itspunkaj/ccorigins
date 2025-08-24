@@ -5,7 +5,7 @@ import { Inter } from "next/font/google"
 import "@/app/globals.css"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
-import CallButton from "@/components/ui/call-button"
+import WhatsappButton from "@/components/ui/whatsapp-button"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -27,7 +27,7 @@ export default function RootLayout({
       <body>
       <Navbar />
       <main className="min-h-screen">{children}</main>
-      <CallButton/>
+      <WhatsappButton/>
       <Footer />
       </body>
     </html>

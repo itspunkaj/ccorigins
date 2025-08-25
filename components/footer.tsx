@@ -1,44 +1,38 @@
 import Link from "next/link"
 import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react"
 
+
 export default function Footer() {
   return (
     <footer className="relative bg-primaryYellow text-black">
-
-      {/* <div
-        className="absolute top-0 left-0 w-full h-full bg-fixed bg-center bg-cover"
-        style={{
-          backgroundImage: "url('/images/office-2.jpg')",
-        }}
-      ></div> */}
-      <div className="md:mx-auto relative bg-transparent z-10 container px-0 mx-4 py-12 md:px-6 font-bahn tracking-tight">
-        <div className="grid grid-cols-1 gap-2 md:grid-cols-6">
-          <div className="space-y-4">
+      <div className="max-w-8xl mx-auto relative bg-transparent z-10 py-12 px-6 font-bahn tracking-tight">
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-8">
+          <div className="space-y-4 md:col-span-3">
             <div className="flex items-center space-x-2">
               {/* <div className="h-8 w-8 rounded-full bg-gradient-to-r from-amber-500 to-orange-500" /> */}
-              <span className="text-xl font-medium">CCORIGINS PVTS LTS</span>
+              <span className="text-xl 2xl:text-3xl font-medium">CCORIGINS PVT LTD</span>
             </div>
-            <p className="text-slate-700 ">Transforming spaces and brands with creative excellence.</p>
+            <p className="text-slate-700 2xl:text-xl md:w-4/5">Transforming spaces and brands with creative excellence.</p>
             <div className="flex space-x-4">
               <Link href="#" className="bg-slate-800 text-primaryYellow rounded-full p-2">
-                <Facebook className="h-5 w-5" />
+                <Facebook className="h-5 w-5 2xl:w-8 2xl:h-8" />
               </Link>
               <Link href="#" className="bg-slate-800 text-primaryYellow rounded-full p-2">
-                <Instagram className="h-5 w-5" />
+                <Instagram className="h-5 w-5 2xl:w-8 2xl:h-8"  />
               </Link>
               <Link href="#" className="bg-slate-800 text-primaryYellow rounded-full p-2">
-                <Twitter className="h-5 w-5" />
+                <Twitter className="h-5 w-5 2xl:w-8 2xl:h-8" />
               </Link>
               <Link href="#" className="bg-slate-800 text-primaryYellow rounded-full p-2">
-                <Linkedin className="h-5 w-5" />
+                <Linkedin className="h-5 w-5 2xl:w-8 2xl:h-8" />
               </Link>
             </div>
-            <p className="text-slate-700">info@ccorigns.com</p>
+            <p className="text-slate-700 2xl:text-xl">info@ccorigns.com</p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Architect</h3>
-            <ul className="space-y-2 text-slate-700">
+            <h3 className="text-lg 2xl:text-3xl font-semibold">Architect</h3>
+            <ul className="space-y-2 text-slate-700 2xl:text-2xl">
               <li>
                 <p className="hover:text-white">
                   Bunglow
@@ -62,8 +56,8 @@ export default function Footer() {
             </ul>
           </div>
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Interior</h3>
-            <ul className="space-y-2 text-slate-700">
+            <h3 className="text-lg 2xl:text-3xl font-semibold">Interior</h3>
+            <ul className="space-y-2 2xl:text-2xl text-slate-700">
               <li>
                 <p className="hover:text-white">
                   Home & Office
@@ -88,8 +82,8 @@ export default function Footer() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Advertising</h3>
-            <ul className="space-y-2 text-slate-700">
+            <h3 className="text-lg 2xl:text-3xl font-semibold">Advertising</h3>
+            <ul className="space-y-2 2xl:text-2xl text-slate-700">
               <li>
                 <p className="hover:text-white">
                   Logo Identity
@@ -113,8 +107,8 @@ export default function Footer() {
             </ul>
           </div>
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Events</h3>
-            <ul className="space-y-2 text-slate-700">
+            <h3 className="text-lg 2xl:text-3xl font-semibold">Events</h3>
+            <ul className="space-y-2 2xl:text-2xl text-slate-700">
               <li>
                 <p className="hover:text-white">
                   Pavilion Design & Execution
@@ -139,8 +133,8 @@ export default function Footer() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Company</h3>
-            <ul className="space-y-2 text-slate-700">
+            <h3 className="text-lg 2xl:text-3xl font-semibold">Company</h3>
+            <ul className="space-y-2 2xl:text-2xl text-slate-700">
               <li>
                 <Link href="/portfolio" className="hover:text-white">
                   Portfolio
@@ -161,7 +155,7 @@ export default function Footer() {
         </div>
 
       </div>
-      <div className=" py-2 text-center bg-black text-slate-100">
+      <div className=" py-2 2xl:py-4 text-center 2xl:text-2xl bg-black text-slate-100">
         <p>&copy; 2024 CCORIGINS. All rights reserved.</p>
       </div>
     </footer>

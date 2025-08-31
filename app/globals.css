@@ -5,6 +5,12 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham/GOTHAM_BLACK.TTF') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -50,12 +50,12 @@ export default function Page() {
                     <Image src={"/images/new-homepage/PNG/Lamp.png"} height={400} width={200} alt="lamp" className="absolute top-0 right-1/2 z-40 translate-x-1/2 object-cover w-[300%] md:w-[45%] 2xl:w-[40%] " />
                     <div className="absolute bottom-0 h-1/2 w-full flex items-center justify-center flex-col ">
                         <div className="max-w-8xl text-yellow-50  w-full h-full flex flex-col items-center justify-center">
-                            <div className="h-1/3 flex font-bahn flex-col items-center justify-start">
+                            <div className="h-1/3 flex font-bahn flex-col items-center justify-start py-10">
                                 <h1 className="2xl:text-7xl xl:text-5xl text-4xl font-thin tracking-widest">creative catalyst</h1>
                                 <h2 className="text-lg xl:text-2xl 2xl:text-4xl capitalize">Defining Leadership 360 degree</h2>
                             </div>
-                            <div className="flex-1 uppercase font-cinzel flex flex-col items-center justify-start">
-                                <h1 className="text-3xl md:text-5xl 2xl:text-8xl font-semibold mb-4 text-center ">Creativity is our hallmark!</h1>
+                            <div className="flex-1 uppercase font-cinzel flex flex-col items-center justify-end py-20">
+                                <h1 className="text-3xl md:text-5xl 2xl:text-8xl font-semibold mb-2 text-center ">Creativity is our hallmark</h1>
                                 <h2 className="text-lg md:text-3xl 2xl:text-7xl font-thin text-center">We bring charms of both the worlds</h2>
                             </div>
                         </div>

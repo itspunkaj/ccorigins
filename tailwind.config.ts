@@ -14,6 +14,7 @@ const config: Config = {
       fontFamily : {
         cinzel : ["Cinzel","serif"],
         bahn : ["Bahnschrift","Helvetica","sans-serif"],
+        gotham : ["Gotham", "sans-serif"]
       },
       colors: {
         primaryYellow: "#FFCC00",

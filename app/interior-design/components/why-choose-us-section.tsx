@@ -28,13 +28,9 @@ export default function WhyChooseUsSection() {
         <section className="w-full bg-slate-200">
             <div className="w-full max-w-8xl mx-auto flex flex-col items-center justify-center py-10 max-sm:px-4">
                 <div className="flex flex-col items-center justify-center w-full">
-                    <h1 className="text-4xl 2xl:text-6xl font-sans">
+                    <h1 className="text-4xl 2xl:text-6xl font-gotham">
                         <span className="font-thin">Why Choose Us</span>
                     </h1>
-                    {/* <p className="text-lg md:text-2xl 2xl:text-4xl text-center font-bahn font-light my-4">
-                        Complete interior design from renovations to modular solutions-for your home or office.<br />
-                        Explore our wide range of furniture and decor to bring your space to life.
-                    </p> */}
                 </div>
                 <div className="flex-1 grid md:grid-cols-5 gap-4 my-10 h-full md:px-10">
                         {

@@ -44,7 +44,7 @@ export default function Navbar() {
           <Link
             key={item.name}
             href={item.href}
-            className="hidden md:flex text-base 2xl:text-3xl font-light 2xl:font-extralight tracking-tight transition-colors hover:text-gray-600 capitalize"
+            className="hidden md:flex text-base 2xl:text-3xl font-light 2xl:font-extralight tracking-tight transition-colors hover:text-gray-900 capitalize"
           >
             {item.name}
           </Link>

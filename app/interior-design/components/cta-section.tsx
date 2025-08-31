@@ -10,7 +10,7 @@ export default function CTASection() {
         <p className="">
           Your dream home is just a click away
         </p>
-        <Button className="mt-4 md:flex rounded-none border-0 hover:shadow-2 shadow-2 text-lg 2xl:text-3xl 2xl:py-10 capitalize font-thin">
+        <Button className="mt-4 md:flex rounded-none border-0 hover:shadow-2 shadow-2 text-lg 2xl:text-3xl py-6 2xl:py-10 capitalize font-thin">
           Let's Collaborate
         </Button>
       </div>

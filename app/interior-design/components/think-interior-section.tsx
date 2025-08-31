@@ -29,7 +29,7 @@ export async function ThinkInteriorSection() {
         <section className="w-full min-h-[70dvh] bg-primaryYellow">
             <div className="w-full max-w-8xl mx-auto flex flex-col items-center justify-center py-10 max-sm:px-4">
                 <div className="flex flex-col items-center justify-center w-full">
-                    <h1 className="uppercase text-4xl 2xl:text-6xl font-sans">
+                    <h1 className="uppercase text-4xl 2xl:text-6xl font-gotham">
                         <span className="font-thin">Think</span><span className="text-white font-extrabold">Interior</span>
                     </h1>
                     <p className="text-lg md:text-2xl 2xl:text-4xl text-center font-bahn font-light my-4">

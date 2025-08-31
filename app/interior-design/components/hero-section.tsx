@@ -13,19 +13,19 @@ export default function HeroSection() {
       title: "LUXE RESIDENCES AT DOWNTOWN",
       subtitle: "Sophisticated Living, Elevated Design",
       badge: "NEWLY COMPLETED",
-      image: "https://res.cloudinary.com/do43v07fz/image/upload/v1751737910/interior_yhar1m.jpg",
+      image: "/images/interior-design/1.jpg",
     },
     {
       title: "MARINA HEIGHTS COLLECTION",
       subtitle: "Waterfront Elegance, Timeless Style",
       badge: "FEATURED PROJECT",
-      image: "https://res.cloudinary.com/do43v07fz/image/upload/v1751737911/kitchen_xygciu.jpg",
+      image: "/images/interior-design/2.jpg",
     },
     {
       title: "SKYLINE PENTHOUSES",
       subtitle: "Panoramic Views, Premium Interiors",
       badge: "EXCLUSIVE DESIGN",
-      image: "https://res.cloudinary.com/do43v07fz/image/upload/v1751737590/bathtub_phuap9.jpg",
+      image: "/images/interior-design/3.jpg",
     },
   ]
 
@@ -54,7 +54,6 @@ export default function HeroSection() {
           World of beautiful interiors
         </h1>
         <p>
-          
         </p>
       </div>
 

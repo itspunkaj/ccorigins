@@ -13,7 +13,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
-import Counter from '@/components/ui/counter';
 
 
 const skills = [

@@ -1,38 +1,19 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+
 
 export default function CTASection() {
   return (
-    <div className="py-16 bg-slate-100">
-      <div className="container m-auto md:px-6">
-        <div className="lg:flex justify-between items-center">
-          <div className="lg:w-6/12 lg:p-0 p-7">
-            <h1 className="text-4xl font-bold leading-tight mb-5 capitalize">Design Begins with a Conversation</h1>
-            <p className="text-xl">Reach out to us to consult and catalyse your custom requirements.</p>
-
-            <div className="py-5 flex flex-col md:flex-row gap-4">
-              <Button size={"lg"} className="">
-                <Link href={'/contact'}>
-                  Book A Consultation
-                </Link>
-              </Button>
-              <Button variant={"outline"} size={"lg"} className=" uppercase group hover:bg-transparent hover:border-black">
-                <Link href={"/contact"}>
-                  Contact Us
-                </Link>
-                <ArrowRight className="group-hover:translate-x-1 transition-all duration-150" />
-              </Button>
-            </div>
-
-          </div>
-          <div className="lg:w-5/12 order-2 p-4">
-            <Image height={500} width={1000} src="https://res.cloudinary.com/do43v07fz/image/upload/v1751741902/apartment_y4cffi.jpg" alt="" className="rounded" />
-          </div>
-        </div>
-
+    <section className="w-full flex items-center justify-center relative h-[40dvh] bg-[url(/images/interior-design/cta-bg.jpg)] bg-cover">
+      {/* <Image className="w-full h-full" src="/images/interior-design/cta-bg.jpg" height={500} width={1000} alt="CTA Background" /> */}
+      <div className=" text-4xl flex flex-col items-center justify-center text-center">
+        <p className="">
+          Your dream home is just a click away
+        </p>
+        <Button className="mt-4 md:flex rounded-none border-0 hover:shadow-2 shadow-2 text-lg 2xl:text-3xl 2xl:py-10 capitalize font-thin">
+          Let's Collaborate
+        </Button>
       </div>
-    </div>
+    </section>
   )
 }

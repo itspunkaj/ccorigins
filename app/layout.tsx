@@ -26,7 +26,7 @@ export default function RootLayout({
     <html suppressHydrationWarning={true}>
       <body>
       <Navbar />
-      <main className="min-h-screen">{children}</main>
+      <main className="min-h-screen font-bahn">{children}</main>
       <WhatsappButton/>
       <Footer />
       </body>

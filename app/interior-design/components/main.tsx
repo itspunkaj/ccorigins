@@ -1,27 +1,28 @@
-import AboutUs from "./about-us";
-import ArchitectureSection from "./architecture-section";
-import CatalogueSection from "./catalogue-section";
-import ClientCarouselSection from "./client-carousel";
+import ArchitectureThatSpeaksStyleSection from "./architecture-that-speak-styles-section";
+import CalculateSection from "./calculate-section";
 import CTASection from "./cta-section";
+import FAQSection from "./faq-section";
 import FeatureInSection from "./featured-in-section";
-import FeaturesSection from "./features-section";
+
+import GlimpseSection from "./glimpse-section";
 import HeroSection from "./hero-section";
-import TestimonialsSection from "./testimonials";
-import WorkShowcase from "./work-showcase";
+import { ThinkInteriorSection } from "./think-interior-section";
+import TrustedPartnersSection from "./trusted-partners-section";
+import WhyChooseUsSection from "./why-choose-us-section";
 
 export default function MainContent() {
   return (
     <div className="interior-design-page">
       <HeroSection />
-      <AboutUs />
-      <ClientCarouselSection/>
-      <WorkShowcase />
-      <FeaturesSection/>
-      <ArchitectureSection/>
-      <CatalogueSection/>
-      <TestimonialsSection/>
-      <CTASection/>
+      <ThinkInteriorSection/>
+      <WhyChooseUsSection/>
+      <CalculateSection/>
+      <GlimpseSection/>
+      <TrustedPartnersSection/>
+      <ArchitectureThatSpeaksStyleSection/>
       <FeatureInSection/>
+      <FAQSection/>
+      <CTASection/>
     </div>
   )
 }

@@ -10,7 +10,7 @@ const phoneNumber = "919331999111"; // Replace with your number
   return (
     <Link
       href={whatsappLink}
-      className="fixed bottom-1/2 right-0 z-50 bg-primaryYellow hover:bg-yellow-500 text-white p-4 rounded-l-md shadow-lg transition duration-200"
+      className="fixed bottom-1/3 right-0 z-50 bg-primaryYellow hover:bg-yellow-500 text-white p-4 rounded-l-md shadow-lg transition duration-200"
       aria-label="Call Us"
     >
       <IconBrandWhatsapp className="w-8 h-8 2xl:w-14 2xl:h-14 text-black" />

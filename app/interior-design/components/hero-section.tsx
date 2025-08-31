@@ -3,9 +3,10 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { ChevronLeft, ChevronRight } from "lucide-react"
 
 export default function HeroSection() {
-  const [currentSlide, setCurrentSlide] = useState(0)
+  const [currentSlide, setCurrentSlide] = useState<number>(0);
 
   const projects = [
     {
@@ -30,8 +31,13 @@ export default function HeroSection() {
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-gray-900">
+      {/* Rings on corners of the section */}
+      <div className="z-10 absolute 2xl:right-[35rem] right-0 -translate-y-1/2 2xl:-translate-y-1/4 translate-x-1/2 h-96 w-96 border-8 2xl:h-[30rem] 2xl:w-[30rem] 2xl:border-[20px] border-primaryYellow rounded-full" />
+      <div className="z-10 absolute bottom-1/4 left-0 translate-y-1/2 2xl:translate-y-1/4 -translate-x-full md:-translate-x-1/2 h-96 w-96 border-8 2xl:h-[50rem] 2xl:w-[50rem] 2xl:border-[16px] border-gray-400 rounded-full" />
+
+
       {/* Hero Background Image */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 z-0">
         <div
           className="h-full w-full bg-cover bg-center bg-no-repeat transition-all duration-1000"
           style={{
@@ -41,64 +47,38 @@ export default function HeroSection() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
       </div>
-
-      {/* Main Content */}
-      <div className="relative z-10 flex items-center min-h-[calc(100vh-120px)] px-6 lg:px-12">
-        <div className="max-w-2xl">
-          {/* Project Badge */}
-          <div className="inline-block mb-6">
-            <span className="px-4 py-2 bg-white/10 backdrop-blur-sm text-white text-xs font-medium tracking-wider border border-white/20">
-              {projects[currentSlide].badge}
-            </span>
-          </div>
-
-          {/* Project Title */}
-          <div className="mb-4">
-            <div className="text-white text-sm font-light tracking-[0.2em] mb-2 opacity-80">INTERIOR DESIGN</div>
-            <h1 className="text-white text-4xl lg:text-6xl xl:text-7xl font-light leading-tight tracking-wide">
-              {projects[currentSlide].title}
-            </h1>
-          </div>
-
-          {/* Subtitle */}
-          <p className="text-white/90 text-lg lg:text-xl font-light mb-8 leading-relaxed">
-            {projects[currentSlide].subtitle}
-          </p>
-
-          {/* CTA Button */}
-          <Link href="/contact">
-            <Button
-              variant="outline"
-              className="border-white text-black hover:bg-transparent hover:text-white  px-8 py-3 text-sm font-medium tracking-wider"
-            >
-              LEARN MORE
-            </Button>
-          </Link>
-        </div>
+      <div className="bg-gradient-to-b from-transparent to-black/40 absolute bottom-0 h-1/3 w-full">
+      </div>
+      <div className="absolute bottom-0 max-w-8xl right-1/2 translate-x-1/2 text-yellow-50 flex items-center justify-center w-full h-1/3">
+        <h1 className="2xl:text-8xl xl:text-6xl text-5xl font-semibold z-20 text-center font-cinzel uppercase">
+          World of beautiful interiors
+        </h1>
+        <p>
+          
+        </p>
       </div>
 
-      {/* Slide Navigation Dots */}
-      <div className="absolute bottom-32 left-6 lg:left-12 z-20 flex space-x-3">
-        {projects.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide ? "bg-white" : "bg-white/40 hover:bg-white/60"
-              }`}
-          />
-        ))}
+      <div
+        className="z-20 absolute bg-white h-10 w-10 2xl:h-20 2xl:w-20 left-5 top-1/2 -translate-y-1/2 rounded-full flex items-center justify-center cursor-pointer"
+        onClick={() => {
+          setCurrentSlide((prev) => {
+            if (prev == 0) return projects.length - 1;
+            return prev - 1;
+          })
+        }}
+      >
+        <ChevronLeft className="h-4/5 w-4/5" />
       </div>
-
-      {/* Side Project Navigation */}
-      <div className="absolute right-6 lg:right-12 top-1/2 transform -translate-y-1/2 z-20 space-y-4">
-        {projects.map((project, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`block w-1 h-16 transition-all duration-300 ${index === currentSlide ? "bg-white" : "bg-white/30 hover:bg-white/50"
-              }`}
-          />
-        ))}
+      <div
+        className="z-20 absolute bg-white h-10 w-10 2xl:h-20 2xl:w-20 right-5 top-1/2 -translate-y-1/2 rounded-full flex items-center justify-center cursor-pointer"
+        onClick={() => {
+          setCurrentSlide((prev) => {
+            if(prev == projects.length-1) return 0;
+            return prev+1;
+          })
+        }}
+      >
+        <ChevronRight className="h-4/5 w-4/5" />
       </div>
     </div>
   )

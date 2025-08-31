@@ -37,11 +37,16 @@ export default function Page() {
         <section className="h-[120dvh] bg-trasparent w-full flex flex-col">
             <div className="h-[80%] w-full">
                 <div className="relative h-full w-full overflow-hidden">
+                    {/* Rings on corners of the section */}
                     <div className="absolute 2xl:right-[35rem] right-0 -translate-y-1/2 2xl:-translate-y-1/4 translate-x-1/2 h-96 w-96 border-8 2xl:h-[30rem] 2xl:w-[30rem] 2xl:border-[20px] border-primaryYellow rounded-full"/>
                     <div className="absolute bottom-1/4 left-0 translate-y-1/2 2xl:translate-y-1/4 -translate-x-full md:-translate-x-1/2 h-96 w-96 border-8 2xl:h-[50rem] 2xl:w-[50rem] 2xl:border-[16px] border-gray-400 rounded-full"/>
+                    
+                    {/* Background images */}
                     {
                         images.map((img) => <Image key={img.id} src={img.imgUrl} height={500} width={800} alt={img.alt} className={`-z-10 h-1/2 w-1/2 object-cover absolute ${img.class}`} />)
                     }
+
+                    {/* Lamp Image */}
                     <Image src={"/images/new-homepage/PNG/Lamp.png"} height={400} width={200} alt="lamp" className="absolute top-0 right-1/2 z-40 translate-x-1/2 object-cover w-[300%] md:w-[45%] 2xl:w-[40%] " />
                     <div className="absolute bottom-0 h-1/2 w-full flex items-center justify-center flex-col ">
                         <div className="max-w-8xl text-yellow-50  w-full h-full flex flex-col items-center justify-center">

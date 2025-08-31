@@ -25,7 +25,7 @@ const featuredIn = [
 
 export default function FeatureInSection () {
   return (
-    <section className="container mx-auto md:px-6 my-20 flex flex-col gap-10 bg-white">
+    <section className="container mx-auto md:px-6 my-10 flex flex-col gap-10 bg-white">
       <h2 className="text-4xl text-center">Featured and Trusted by</h2>
       <div className="grid grid-cols-2 gap-y-10 md:grid-cols-4 align-middle content-center ">
         {

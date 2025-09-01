@@ -3,13 +3,13 @@ import Image from "next/image";
 export default function GlimpseSection() {
     return (
         <section className="w-full font-bahn">
-            <div className="max-w-8xl mx-auto py-12 px-4">
-                <div>
+            <div className="max-w-8xl mx-auto py-20 px-4 ">
+                <div className="mb-10">
                     <h2 className="text-4xl 2xl:text-6xl ">
                         <span className="font-medium">Get Glimpse of CCO homes</span>
                     </h2>
-                    <p className="text-lg md:text-2xl 2xl:text-4xl font-light my-4">
-                        Your dreams, made easy...
+                    <p className="text-lg md:text-2xl 2xl:text-4xl font-light mt-1">
+                        Your dream interiors, made easy...
                     </p>
                 </div>
                 <div className="grid md:grid-cols-2 justify-around gap-4">

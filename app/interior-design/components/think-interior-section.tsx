@@ -24,15 +24,15 @@ const thinkInteriorImages = [
     }
 ]
 
-export async function ThinkInteriorSection() {
+export function ThinkInteriorSection() {
     return (
         <section className="w-full min-h-[70dvh] bg-primaryYellow">
             <div className="w-full max-w-8xl mx-auto flex flex-col items-center justify-center py-10 max-sm:px-4">
                 <div className="flex flex-col items-center justify-center w-full">
-                    <h1 className="uppercase text-4xl 2xl:text-6xl font-gotham">
+                    <h1 className="uppercase text-4xl 4xl:text-6xl font-gotham">
                         <span className="font-thin">Think</span><span className="text-white font-extrabold">Interior</span>
                     </h1>
-                    <p className="text-lg md:text-2xl 2xl:text-4xl text-center font-bahn font-light my-4">
+                    <p className="text-lg md:text-2xl 4xl:text-4xl text-center font-bahn font-light my-4">
                         Complete interior design from renovations to modular solutions-for your home or office.<br />
                         Explore our wide range of furniture and decor to bring your space to life.
                     </p>
@@ -43,9 +43,9 @@ export async function ThinkInteriorSection() {
                                 return (
                                     <div key={img.id} className="bg-white rounded-3xl shadow-md overflow-hidden h-[35dvh] flex flex-col items-center justify-between">
                                         <Image src={img.url} className="object-cover h-[25dvh]" height={1000} width={1000} alt={img.title}/>
-                                        <div className="flex-1 w-full flex flex-col items-center justify-center 2xl:text-3xl">
+                                        <div className="flex-1 w-full flex flex-col items-center justify-center 4xl:text-3xl">
                                             {img.title}
-                                            <ChevronRight className="2xl:w-10 2xl:h-10"/>
+                                            <ChevronRight className="4xl:w-10 4xl:h-10"/>
                                         </div>
                                     </div>
                                 )

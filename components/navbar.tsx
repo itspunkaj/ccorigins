@@ -33,9 +33,9 @@ export default function Navbar() {
 
   return (
     <header className={`fixed flex font-bahn justify-end items-center max-sm:px-2 top-0 z-50 w-full h-fit bg-transparent transition-all duration-150 ease-in-out ${isScrolled ? "bg-white text-black  shadow-md" : "text-white"}`}>
-      <div className="max-w-8xl flex h-16 2xl:h-28 w-full mx-auto items-center justify-between px-4 md:px-6 overflow-hidden">
+      <div className="max-w-8xl flex h-16 4xl:h-28 w-full mx-auto items-center justify-between px-4 md:px-6 overflow-hidden">
         <Link href="/" className="flex items-center space-x-2">
-          <Image src={`${isScrolled ? "/images/new-homepage/PNG/L_01.png" : "/images/new-homepage/PNG/L_02.png"}`} height={20} width={50} alt="Logo" className="object-cover w-20 2xl:w-32" />
+          <Image src={`${isScrolled ? "/images/new-homepage/PNG/L_01.png" : "/images/new-homepage/PNG/L_02.png"}`} height={20} width={50} alt="Logo" className="object-cover w-20 4xl:w-32" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -44,13 +44,13 @@ export default function Navbar() {
           <Link
             key={item.name}
             href={item.href}
-            className="hidden md:flex text-base 2xl:text-3xl font-light 2xl:font-extralight tracking-tight transition-colors hover:text-gray-900 capitalize"
+            className="hidden md:flex text-base 4xl:text-3xl font-light 4xl:font-extralight tracking-tight transition-colors hover:text-gray-900 capitalize"
           >
             {item.name}
           </Link>
         ))}
 
-        <Button className="hidden md:flex rounded-none border-0 hover:shadow-2 shadow-2 2xl:text-3xl 2xl:py-10 capitalize font-thin">
+        <Button className="hidden md:flex rounded-none border-0 hover:shadow-2 shadow-2 4xl:text-3xl 4xl:py-10 capitalize font-thin">
           Let's Collaborate
         </Button>
         {/* </nav> */}

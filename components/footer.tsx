@@ -10,29 +10,29 @@ export default function Footer() {
           <div className="md:col-span-3">
             <div className="flex items-center space-x-2">
               {/* <div className="h-8 w-8 rounded-full bg-gradient-to-r from-amber-500 to-orange-500" /> */}
-              <span className="text-xl 2xl:text-3xl font-medium leading-none">CCORIGINS PVT LTD</span>
+              <span className="text-xl 4xl:text-3xl font-medium leading-none">CCORIGINS PVT LTD</span>
             </div>
-            <p className="text-slate-700 2xl:text-xl md:w-4/5">Transforming spaces and brands with creative excellence.</p>
+            <p className="text-slate-700 4xl:text-xl md:w-4/5">Transforming spaces and brands with creative excellence.</p>
             <div className="flex space-x-4 mt-4">
               <Link href="#" className="bg-slate-800 text-primaryYellow rounded-full p-2">
-                <Facebook className="h-5 w-5 2xl:w-8 2xl:h-8" />
+                <Facebook className="h-5 w-5 4xl:w-8 4xl:h-8" />
               </Link>
               <Link href="#" className="bg-slate-800 text-primaryYellow rounded-full p-2">
-                <Instagram className="h-5 w-5 2xl:w-8 2xl:h-8"  />
+                <Instagram className="h-5 w-5 4xl:w-8 4xl:h-8"  />
               </Link>
               <Link href="#" className="bg-slate-800 text-primaryYellow rounded-full p-2">
-                <Twitter className="h-5 w-5 2xl:w-8 2xl:h-8" />
+                <Twitter className="h-5 w-5 4xl:w-8 4xl:h-8" />
               </Link>
               <Link href="#" className="bg-slate-800 text-primaryYellow rounded-full p-2">
-                <Linkedin className="h-5 w-5 2xl:w-8 2xl:h-8" />
+                <Linkedin className="h-5 w-5 4xl:w-8 4xl:h-8" />
               </Link>
             </div>
-            <p className="text-slate-700 2xl:text-xl">info@ccorigns.com</p>
+            <p className="text-slate-700 4xl:text-xl">info@ccorigns.com</p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-lg 2xl:text-3xl font-semibold">Architect</h3>
-            <ul className="space-y-2 text-slate-700 2xl:text-2xl">
+            <h3 className="text-lg 4xl:text-3xl font-semibold">Architect</h3>
+            <ul className="space-y-2 text-slate-700 4xl:text-2xl">
               <li>
                 <p className="hover:text-white">
                   Bunglow
@@ -56,8 +56,8 @@ export default function Footer() {
             </ul>
           </div>
           <div className="space-y-4">
-            <h3 className="text-lg 2xl:text-3xl font-semibold">Interior</h3>
-            <ul className="space-y-2 2xl:text-2xl text-slate-700">
+            <h3 className="text-lg 4xl:text-3xl font-semibold">Interior</h3>
+            <ul className="space-y-2 4xl:text-2xl text-slate-700">
               <li>
                 <p className="hover:text-white">
                   Home & Office
@@ -82,8 +82,8 @@ export default function Footer() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-lg 2xl:text-3xl font-semibold">Advertising</h3>
-            <ul className="space-y-2 2xl:text-2xl text-slate-700">
+            <h3 className="text-lg 4xl:text-3xl font-semibold">Advertising</h3>
+            <ul className="space-y-2 4xl:text-2xl text-slate-700">
               <li>
                 <p className="hover:text-white">
                   Logo Identity
@@ -107,8 +107,8 @@ export default function Footer() {
             </ul>
           </div>
           <div className="space-y-4">
-            <h3 className="text-lg 2xl:text-3xl font-semibold">Events</h3>
-            <ul className="space-y-2 2xl:text-2xl text-slate-700">
+            <h3 className="text-lg 4xl:text-3xl font-semibold">Events</h3>
+            <ul className="space-y-2 4xl:text-2xl text-slate-700">
               <li>
                 <p className="hover:text-white">
                   Pavilion Design & Execution
@@ -133,8 +133,8 @@ export default function Footer() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-lg 2xl:text-3xl font-semibold">Company</h3>
-            <ul className="space-y-2 2xl:text-2xl text-slate-700">
+            <h3 className="text-lg 4xl:text-3xl font-semibold">Company</h3>
+            <ul className="space-y-2 4xl:text-2xl text-slate-700">
               <li>
                 <Link href="/portfolio" className="hover:text-white">
                   Portfolio
@@ -155,7 +155,7 @@ export default function Footer() {
         </div>
 
       </div>
-      <div className=" py-2 2xl:py-4 text-center 2xl:text-2xl bg-black text-slate-100">
+      <div className=" py-2 4xl:py-4 text-center 4xl:text-2xl bg-black text-slate-100">
         <p>&copy; 2024 CCORIGINS. All rights reserved.</p>
       </div>
     </footer>

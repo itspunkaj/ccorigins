@@ -75,7 +75,7 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       maxWidth : {
-        "8xl" : "1996px"
+        "8xl" : "1500px"
       },
       keyframes: {
         "accordion-down": {

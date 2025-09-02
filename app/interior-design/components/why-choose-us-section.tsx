@@ -40,14 +40,14 @@ export default function WhyChooseUsSection() {
         <section className="w-full bg-slate-200">
             <div className="w-full max-w-8xl mx-auto flex flex-col items-center justify-center py-10 max-sm:px-4">
                 <div className="flex flex-col items-center justify-center w-full">
-                    <h1 className="text-4xl 2xl:text-6xl font-gotham">
+                    <h1 className="text-4xl 4xl:text-6xl font-gotham">
                         <span className="font-thin">Why Choose Us</span>
                     </h1>
-                    <p className="text-lg md:text-2xl 2xl:text-4xl font-light mt-1">
+                    <p className="text-lg md:text-2xl 4xl:text-4xl font-light mt-1">
                         We combine creativity, functionality, and attention to detail to transform your spaces.
                     </p>
                 </div>
-                <div className="flex-1 grid grid-cols-4 items-center my-10 gap-10 h-full md:px-10">
+                <div className="flex-1 grid grid-cols-2 md:grid-cols-4 items-center my-10 gap-10 h-full md:px-10">
                     {images.map((img, index) => (
                         <div
                             key={img.id}

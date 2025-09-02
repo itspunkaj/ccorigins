@@ -38,10 +38,10 @@ export default function TrustedPartnersSection () {
     return (
         <section className="bg-slate-200 py-10">
             <div className="max-w-8xl w-full px-4 mx-auto">
-                <h2 className="text-4xl 2xl:text-6xl font-medium">
+                <h2 className="text-4xl 4xl:text-6xl font-medium">
                     Our Trusted Partners
                 </h2>
-                <p className="text-lg md:text-2xl 2xl:text-4xl font-light my-4">
+                <p className="text-lg md:text-2xl 4xl:text-4xl font-light my-4">
                     Clients Who Believe in Our Origin
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-6 my-4 gap-10 mx-auto">

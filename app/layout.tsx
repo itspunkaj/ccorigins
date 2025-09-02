@@ -6,6 +6,7 @@ import "@/app/globals.css"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import WhatsappButton from "@/components/ui/whatsapp-button"
+import CollaborateModal from "@/components/collaborate-modal"
 
 const inter = Inter({ subsets: ["latin"] })
 

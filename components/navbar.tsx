@@ -6,10 +6,13 @@ import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import Image from "next/image"
+import CollaborateModal from "./collaborate-modal"
+import { useModalStore } from "@/store/modals-toggle-store"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false);
+  const { isCollaborateModalOpen, setIsCollaborateModalOpen } = useModalStore()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,7 +42,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        {/* <nav className="hidden md:flex items-center space-x-8"> */}
+
         {navItems.map((item) => (
           <Link
             key={item.name}
@@ -50,17 +53,12 @@ export default function Navbar() {
           </Link>
         ))}
 
-        <Button className="hidden md:flex rounded-none border-0 hover:shadow-2 shadow-2 4xl:text-3xl 4xl:py-10 capitalize font-thin">
+        <Button className="hidden md:flex rounded-none border-0 hover:shadow-2 shadow-2 4xl:text-3xl 4xl:py-10 capitalize font-thin" onClick={()=>{setIsCollaborateModalOpen(true)}}>
           Let's Collaborate
         </Button>
         {/* </nav> */}
 
-        {/* <div className="hidden md:flex items-center space-x-4">
-          <Button variant="outline" className="bg-white text-black border-gray-300 font-light tracking-wider">
-            Sign In
-          </Button>
-          <Button className="bg-black hover:bg-gray-800 text-white font-light tracking-wider">Get Started</Button>
-        </div> */}
+
 
         {/* Mobile Navigation */}
       <Sheet open={isOpen} onOpenChange={setIsOpen} >
@@ -82,13 +80,14 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
-            <Button className="rounded-none border-0 hover:shadow-2 shadow-2">
+            <Button className="rounded-none border-0 hover:shadow-2 shadow-2" onClick={()=>{setIsOpen(false);setIsCollaborateModalOpen(true);}}>
               Let's Collaborate
             </Button>
           </div>
         </SheetContent>
       </Sheet>
       </div>
+      {isCollaborateModalOpen&&<CollaborateModal/>}
     </header>
   )
 }

@@ -18,12 +18,12 @@ const referralTiers: ReferralTier[] = [
 export default function ReferFriendModalForm() {
     const { setIsReferFriendModalOpen }= useModalStore()
     return (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 overflow-scroll">
+        <div className="fixed inset-0  bg-black bg-opacity-50 z-50 overflow-scroll">
             <div className="relative bg-[url(/images/interior-design/referral-bg.jpg)] bg-cover">
-                <button className="absolute text-white top-10 right-10" onClick={()=>{setIsReferFriendModalOpen(false)}}>
+                <button className="absolute text-white top-5 right-5" onClick={()=>{setIsReferFriendModalOpen(false)}}>
                     <X />
                 </button>
-                <div className="grid md:grid-cols-3 p-8 pt-20 md:p-20 min-w-screen min-h-screen">
+                <div className="grid md:grid-cols-3 p-4 pt-10 md:p-20 min-h-screen min-w-screen">
                     <div className="md:col-span-2 flex flex-col justify-between text-white ">
                         <div>
                             <h3 className="uppercase text-4xl font-cinzel">
@@ -57,7 +57,7 @@ export default function ReferFriendModalForm() {
                         </div>
                     </div>
                     <div className="my-auto">
-                        <div className="bg-white rounded-lg p-8">
+                        <div className="bg-white rounded-lg px-4 py-8 md:p-8">
                             <div className="">
                                 <h3 className="text-2xl ">Fill in your friend's details</h3>
                                 <p className="font-thin">Please fill you & your friend details</p>

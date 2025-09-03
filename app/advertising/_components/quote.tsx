@@ -1,6 +1,5 @@
-import Image from "next/image";
 
-export default function QuoteSection () {
+export default function QuoteSection() {
   return (
     <div className="max-md:py-10 md:h-screen bg-black text-white w-full flex flex-col items-center justify-center px-4">
       <p className="text-4xl md:text-6xl text-center">
@@ -17,7 +16,9 @@ export default function QuoteSection () {
         disablePictureInPicture
         controls={false}
       />
-      <p className="text-2xl md:text-3xl font-light font-sans text-center">Uniting brands and audiences through catalytic ideas.</p>
+      <p className="text-2xl md:text-3xl font-light font-sans text-center">
+        Uniting brands and audiences through catalytic ideas.
+      </p>
     </div>
-  )
+  );
 }

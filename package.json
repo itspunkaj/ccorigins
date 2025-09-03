@@ -6,7 +6,19 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "prepare": "husky install",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,css,scss}": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -43,9 +55,16 @@
     "clsx": "^2.1.1",
     "cmdk": "1.0.4",
     "embla-carousel-react": "8.5.1",
+    "eslint": "^9.34.0",
+    "eslint-config-next": "^15.5.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-unused-imports": "^4.2.0",
     "framer-motion": "^12.23.3",
+    "husky": "^9.1.7",
     "input-otp": "1.4.1",
     "intl-tel-input": "^25.8.1",
+    "lint-staged": "^16.1.6",
     "lucide-react": "^0.454.0",
     "motion": "^12.23.9",
     "next": "15.2.4",

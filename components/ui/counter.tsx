@@ -1,62 +1,62 @@
-"use client"
-import { useEffect, useRef, useState } from "react"
+'use client';
+import { useEffect, useRef, useState } from 'react';
 
 interface CounterProps {
-  end: number
-  duration?: number
-  suffix?: string
-  prefix?: string
+  end: number;
+  duration?: number;
+  suffix?: string;
+  prefix?: string;
 }
 
-export default function Counter({ end, duration = 2000, suffix = "", prefix = "" }: CounterProps) {
-  const [count, setCount] = useState(0)
-  const [isVisible, setIsVisible] = useState(false)
-  const counterRef = useRef<HTMLDivElement>(null)
+export default function Counter({ end, duration = 2000, suffix = '', prefix = '' }: CounterProps) {
+  const [count, setCount] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+  const counterRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true)
+          setIsVisible(true);
         }
       },
       { threshold: 0.1 },
-    )
+    );
 
     if (counterRef.current) {
-      observer.observe(counterRef.current)
+      observer.observe(counterRef.current);
     }
 
-    return () => observer.disconnect()
-  }, [])
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
-    if (!isVisible) return
+    if (!isVisible) return;
 
-    let startTime: number
-    let animationFrame: number
+    let startTime: number;
+    let animationFrame: number;
 
     const animate = (currentTime: number) => {
-      if (!startTime) startTime = currentTime
-      const progress = Math.min((currentTime - startTime) / duration, 1)
+      if (!startTime) startTime = currentTime;
+      const progress = Math.min((currentTime - startTime) / duration, 1);
 
       // Easing function for smooth animation
-      const easeOutQuart = 1 - Math.pow(1 - progress, 4)
-      setCount(Math.floor(easeOutQuart * end))
+      const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+      setCount(Math.floor(easeOutQuart * end));
 
       if (progress < 1) {
-        animationFrame = requestAnimationFrame(animate)
+        animationFrame = requestAnimationFrame(animate);
       }
-    }
+    };
 
-    animationFrame = requestAnimationFrame(animate)
+    animationFrame = requestAnimationFrame(animate);
 
     return () => {
       if (animationFrame) {
-        cancelAnimationFrame(animationFrame)
+        cancelAnimationFrame(animationFrame);
       }
-    }
-  }, [isVisible, end, duration])
+    };
+  }, [isVisible, end, duration]);
 
   return (
     <div ref={counterRef} className="text-4xl md:text-5xl font-bold text-primaryYellow">
@@ -64,5 +64,5 @@ export default function Counter({ end, duration = 2000, suffix = "", prefix = ""
       {count.toLocaleString()}
       {suffix}
     </div>
-  )
+  );
 }

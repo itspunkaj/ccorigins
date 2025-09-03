@@ -10,6 +10,6 @@ const nextConfig = {
     unoptimized: true,
     domains: ['res.cloudinary.com'],
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;

@@ -1,9 +1,6 @@
-"use client"
-
-import { useEffect, useState, useRef } from "react"
-import { Card, CardContent } from "@/components/ui/card"
-import { Building2, Calendar, Home } from "lucide-react"
-import Counter from "@/components/ui/counter"
+'use client';
+import { Card, CardContent } from '@/components/ui/card';
+import Counter from '@/components/ui/counter';
 
 export default function CounterSection() {
   return (
@@ -90,5 +87,5 @@ export default function CounterSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

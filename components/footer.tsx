@@ -1,6 +1,5 @@
-import Link from "next/link"
-import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react"
-
+import { Facebook, Instagram, Linkedin,Twitter } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -10,15 +9,19 @@ export default function Footer() {
           <div className="md:col-span-3">
             <div className="flex items-center space-x-2">
               {/* <div className="h-8 w-8 rounded-full bg-gradient-to-r from-amber-500 to-orange-500" /> */}
-              <span className="text-xl 4xl:text-3xl font-medium leading-none">CCORIGINS PVT LTD</span>
+              <span className="text-xl 4xl:text-3xl font-medium leading-none">
+                CCORIGINS PVT LTD
+              </span>
             </div>
-            <p className="text-slate-700 4xl:text-xl md:w-4/5">Transforming spaces and brands with creative excellence.</p>
+            <p className="text-slate-700 4xl:text-xl md:w-4/5">
+              Transforming spaces and brands with creative excellence.
+            </p>
             <div className="flex space-x-4 mt-4">
               <Link href="#" className="bg-slate-800 text-primaryYellow rounded-full p-2">
                 <Facebook className="h-5 w-5 4xl:w-8 4xl:h-8" />
               </Link>
               <Link href="#" className="bg-slate-800 text-primaryYellow rounded-full p-2">
-                <Instagram className="h-5 w-5 4xl:w-8 4xl:h-8"  />
+                <Instagram className="h-5 w-5 4xl:w-8 4xl:h-8" />
               </Link>
               <Link href="#" className="bg-slate-800 text-primaryYellow rounded-full p-2">
                 <Twitter className="h-5 w-5 4xl:w-8 4xl:h-8" />
@@ -34,24 +37,16 @@ export default function Footer() {
             <h3 className="text-lg 4xl:text-3xl font-semibold">Architect</h3>
             <ul className="space-y-2 text-slate-700 4xl:text-2xl">
               <li>
-                <p className="hover:text-white">
-                  Bunglow
-                </p>
+                <p className="hover:text-white">Bunglow</p>
               </li>
               <li>
-                <p className="hover:text-white">
-                  Stand Alone Villa
-                </p>
+                <p className="hover:text-white">Stand Alone Villa</p>
               </li>
               <li>
-                <p className="hover:text-white">
-                  Duplex House
-                </p>
+                <p className="hover:text-white">Duplex House</p>
               </li>
               <li>
-                <p className="hover:text-white">
-                  Studio Apartment
-                </p>
+                <p className="hover:text-white">Studio Apartment</p>
               </li>
             </ul>
           </div>
@@ -59,24 +54,16 @@ export default function Footer() {
             <h3 className="text-lg 4xl:text-3xl font-semibold">Interior</h3>
             <ul className="space-y-2 4xl:text-2xl text-slate-700">
               <li>
-                <p className="hover:text-white">
-                  Home & Office
-                </p>
+                <p className="hover:text-white">Home & Office</p>
               </li>
               <li>
-                <p className="hover:text-white">
-                  Hotel Rooms
-                </p>
+                <p className="hover:text-white">Hotel Rooms</p>
               </li>
               <li>
-                <p className="hover:text-white">
-                  Restraurant & Cafe
-                </p>
+                <p className="hover:text-white">Restraurant & Cafe</p>
               </li>
               <li>
-                <p className="hover:text-white">
-                  Showroom
-                </p>
+                <p className="hover:text-white">Showroom</p>
               </li>
             </ul>
           </div>
@@ -85,24 +72,16 @@ export default function Footer() {
             <h3 className="text-lg 4xl:text-3xl font-semibold">Advertising</h3>
             <ul className="space-y-2 4xl:text-2xl text-slate-700">
               <li>
-                <p className="hover:text-white">
-                  Logo Identity
-                </p>
+                <p className="hover:text-white">Logo Identity</p>
               </li>
               <li>
-                <p className="hover:text-white">
-                  Brand Building
-                </p>
+                <p className="hover:text-white">Brand Building</p>
               </li>
               <li>
-                <p className="hover:text-white">
-                  Creative & Copy
-                </p>
+                <p className="hover:text-white">Creative & Copy</p>
               </li>
               <li>
-                <p className="hover:text-white">
-                  Web Design
-                </p>
+                <p className="hover:text-white">Web Design</p>
               </li>
             </ul>
           </div>
@@ -110,24 +89,16 @@ export default function Footer() {
             <h3 className="text-lg 4xl:text-3xl font-semibold">Events</h3>
             <ul className="space-y-2 4xl:text-2xl text-slate-700">
               <li>
-                <p className="hover:text-white">
-                  Pavilion Design & Execution
-                </p>
+                <p className="hover:text-white">Pavilion Design & Execution</p>
               </li>
               <li>
-                <p className="hover:text-white">
-                  Corporate Events
-                </p>
+                <p className="hover:text-white">Corporate Events</p>
               </li>
               <li>
-                <p className="hover:text-white">
-                  Product Launching
-                </p>
+                <p className="hover:text-white">Product Launching</p>
               </li>
               <li>
-                <p className="hover:text-white">
-                  Gifting
-                </p>
+                <p className="hover:text-white">Gifting</p>
               </li>
             </ul>
           </div>
@@ -146,18 +117,15 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <p className="hover:text-white">
-                  Careers
-                </p>
+                <p className="hover:text-white">Careers</p>
               </li>
             </ul>
           </div>
         </div>
-
       </div>
       <div className=" py-2 4xl:py-4 text-center 4xl:text-2xl bg-black text-slate-100">
         <p>&copy; 2024 CCORIGINS. All rights reserved.</p>
       </div>
     </footer>
-  )
+  );
 }

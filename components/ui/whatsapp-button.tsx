@@ -1,10 +1,9 @@
-import { IconBrandWhatsapp } from "@tabler/icons-react";
-import { Phone } from "lucide-react";
-import Link from "next/link";
+import { IconBrandWhatsapp } from '@tabler/icons-react';
+import Link from 'next/link';
 
 export default function WhatsappButton() {
-const phoneNumber = "919331999111"; // Replace with your number
-  const message = "Hey! I want to know more about CCO.";
+  const phoneNumber = '919331999111'; // Replace with your number
+  const message = 'Hey! I want to know more about CCO.';
   const encodedMessage = encodeURIComponent(message);
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
   return (

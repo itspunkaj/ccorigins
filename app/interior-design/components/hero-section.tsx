@@ -1,33 +1,55 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState<number>(0);
-
   const projects = [
     {
       title: "LUXE RESIDENCES AT DOWNTOWN",
       subtitle: "Sophisticated Living, Elevated Design",
       badge: "NEWLY COMPLETED",
-      image: "/images/interior-design/1.jpg",
+      image: "/images/interior-design/hero-section/1.jpg",
     },
     {
       title: "MARINA HEIGHTS COLLECTION",
       subtitle: "Waterfront Elegance, Timeless Style",
       badge: "FEATURED PROJECT",
-      image: "/images/interior-design/2.jpg",
+      image: "/images/interior-design/hero-section/2.jpg",
     },
     {
       title: "SKYLINE PENTHOUSES",
       subtitle: "Panoramic Views, Premium Interiors",
       badge: "EXCLUSIVE DESIGN",
-      image: "/images/interior-design/3.jpg",
+      image: "/images/interior-design/hero-section/3.jpg",
+    },
+    {
+      title: "SKYLINE PENTHOUSES",
+      subtitle: "Panoramic Views, Premium Interiors",
+      badge: "EXCLUSIVE DESIGN",
+      image: "/images/interior-design/hero-section/4.jpg",
+    },
+    {
+      title: "SKYLINE PENTHOUSES",
+      subtitle: "Panoramic Views, Premium Interiors",
+      badge: "EXCLUSIVE DESIGN",
+      image: "/images/interior-design/hero-section/5.jpg",
     },
   ]
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) =>
+        prevSlide === projects.length - 1 ? 0 : prevSlide + 1
+      );
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [projects.length]);
+
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-gray-900">
@@ -39,7 +61,7 @@ export default function HeroSection() {
       {/* Hero Background Image */}
       <div className="absolute inset-0 z-0">
         <div
-          className="h-full w-full bg-cover bg-center bg-no-repeat transition-all duration-1000"
+          className="h-full w-full bg-cover bg-center bg-no-repeat transition-all duration-500"
           style={{
             backgroundImage: `url('${projects[currentSlide].image}')`,
             backgroundPosition: "center right",
@@ -72,8 +94,8 @@ export default function HeroSection() {
         className="z-20 absolute bg-white h-10 w-10 4xl:h-20 4xl:w-20 right-5 top-1/2 -translate-y-1/2 rounded-full flex items-center justify-center cursor-pointer"
         onClick={() => {
           setCurrentSlide((prev) => {
-            if(prev == projects.length-1) return 0;
-            return prev+1;
+            if (prev == projects.length - 1) return 0;
+            return prev + 1;
           })
         }}
       >

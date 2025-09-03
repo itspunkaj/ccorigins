@@ -1,6 +1,5 @@
 "use client";
-import React, { useState } from "react";
-import { ThreeDMarquee } from "@/components/ui/3d-marquee";
+import React from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";

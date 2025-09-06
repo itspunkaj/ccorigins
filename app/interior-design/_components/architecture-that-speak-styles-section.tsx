@@ -4,7 +4,7 @@ export default function ArchitectureThatSpeaksStyleSection() {
   return (
     <section className=" font-gotham text-white h-fit bg-[url(/images/interior-design/architecture-bg.jpg)] bg-cover">
       {/* <Image className="w-full" src={"/images/interior-design/architecture-bg.jpg"} height={1000} width={2000} alt="architecture background"/> */}
-      <div className="  h-full max-w-8xl mx-auto w-full grid md:grid-cols-2 gap-10 p-10 pb-0">
+      <div className="  h-full max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-10 p-10 pb-0">
         <div className="flex flex-col md:justify-end">
           <div className="flex flex-col mb-10">
             <h2 className="text-4xl 4xl:text-6xl">Architecture That Speaks Style</h2>

@@ -38,7 +38,7 @@ const images = [
 export default function WhyChooseUsSection() {
   return (
     <section className="w-full bg-slate-200">
-      <div className="w-full max-w-8xl mx-auto flex flex-col items-center justify-center py-10 max-sm:px-4">
+      <div className="w-full max-w-7xl mx-auto flex flex-col items-center justify-center py-10 max-sm:px-4">
         <div className="flex flex-col items-center justify-center w-full">
           <h1 className="text-4xl 4xl:text-6xl font-gotham">
             <span className="font-thin">Why Choose Us</span>

@@ -5,7 +5,7 @@ export default function CalculateSection() {
   const { setIsReferFriendModalOpen } = useModalStore();
   return (
     <section className="bg-black w-full font-bahn">
-      <div className="max-w-8xl grid md:grid-cols-2 mx-auto">
+      <div className="max-w-7xl grid md:grid-cols-2 mx-auto">
         <div className="bg-transparent py-10">
           <div className=" flex max-sm:flex-col items-center justify-center font-light">
             <div className="w-1/3 px-2">

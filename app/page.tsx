@@ -62,7 +62,7 @@ export default function Page() {
             className="absolute top-0 right-1/2 z-40 translate-x-1/2 object-cover w-[300%] md:w-[45%] 4xl:w-[40%] "
           />
           <div className="absolute bottom-0 h-1/2 w-full flex items-center justify-center flex-col ">
-            <div className="max-w-8xl text-yellow-50  w-full h-full flex flex-col items-center justify-center">
+            <div className="max-w-7xl text-yellow-50  w-full h-full flex flex-col items-center justify-center">
               <div className="h-1/3 flex font-bahn flex-col items-center justify-start py-10">
                 <h1 className="4xl:text-7xl xl:text-5xl text-4xl font-thin tracking-widest">
                   creative catalyst
@@ -81,7 +81,7 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="absolute -bottom-1.5 4xl:-bottom-2.5 z-10 max-w-8xl h-3 4xl:h-5 w-full bg-primaryYellow right-1/2 translate-x-1/2"></div>
+          <div className="absolute -bottom-1.5 4xl:-bottom-2.5 z-10 max-w-7xl h-3 4xl:h-5 w-full bg-primaryYellow right-1/2 translate-x-1/2"></div>
         </div>
       </div>
       <div className="flex-1 flex flex-col relative bg-white items-center justify-center">

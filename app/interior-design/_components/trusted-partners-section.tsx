@@ -36,7 +36,7 @@ const images = [
 export default function TrustedPartnersSection() {
   return (
     <section className="bg-slate-200 py-10">
-      <div className="max-w-8xl w-full px-4 mx-auto">
+      <div className="max-w-7xl w-full px-4 mx-auto">
         <h2 className="text-4xl 4xl:text-6xl font-medium">Our Trusted Partners</h2>
         <p className="text-lg md:text-2xl 4xl:text-4xl font-light my-4">
           Clients Who Believe in Our Origin

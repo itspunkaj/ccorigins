@@ -34,7 +34,7 @@ export default function FAQSection() {
   const [openedFAQ, setOpenedFAQ] = useState<number>(-1);
   return (
     <section className="w-full bg-gray-200 py-14">
-      <div className="max-w-8xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl 4xl:text-6xl font-medium">FAQs About Home Interior Design</h2>
         <div className="my-4 flex flex-col gap-2">
           {FAQs.map((faq) => {

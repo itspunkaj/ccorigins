@@ -1,10 +1,12 @@
 import { ChevronRight } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const thinkInteriorImages = [
   {
     id: '1',
     title: 'Full Home',
+    link : "/full-home",
     url: '/images/interior-design/full-home.jpg',
   },
   {
@@ -27,7 +29,7 @@ const thinkInteriorImages = [
 export function ThinkInteriorSection() {
   return (
     <section className="w-full min-h-[70dvh] bg-primaryYellow">
-      <div className="w-full max-w-8xl mx-auto flex flex-col items-center justify-center py-10 max-sm:px-4">
+      <div className="w-full max-w-7xl mx-auto flex flex-col items-center justify-center py-10 max-sm:px-4">
         <div className="flex flex-col items-center justify-center w-full">
           <h1 className="uppercase text-4xl 4xl:text-6xl font-gotham">
             <span className="font-thin">Think</span>
@@ -42,7 +44,8 @@ export function ThinkInteriorSection() {
         <div className="flex-1 grid md:grid-cols-4 gap-4 my-10 h-full md:px-10">
           {thinkInteriorImages.map((img) => {
             return (
-              <div
+              <Link
+                href={`interior-design${img.link}`}
                 key={img.id}
                 className="bg-white rounded-3xl shadow-md overflow-hidden h-[35dvh] flex flex-col items-center justify-between"
               >
@@ -57,7 +60,7 @@ export function ThinkInteriorSection() {
                   {img.title}
                   <ChevronRight className="4xl:w-10 4xl:h-10" />
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>

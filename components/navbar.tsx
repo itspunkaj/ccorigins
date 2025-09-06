@@ -4,17 +4,18 @@ import { Menu } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useModalStore } from '@/store/modals-toggle-store';
-
 import CollaborateModal from './collaborate-modal';
+import { usePathname } from 'next/navigation';
+import path from 'path';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { isCollaborateModalOpen, setIsCollaborateModalOpen } = useModalStore();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,9 +39,9 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed flex font-bahn justify-end items-center max-sm:px-2 top-0 z-50 w-full h-fit bg-transparent transition-all duration-150 ease-in-out ${isScrolled ? 'bg-white text-black  shadow-md' : 'text-white'}`}
+      className={`fixed flex font-bahn justify-end items-center max-sm:px-2 top-0 z-50 w-full h-fit bg-transparent text-white transition-all duration-150 ease-in-out ${isScrolled ? 'bg-white !text-black  shadow-md' : ''}`}
     >
-      <div className="max-w-8xl flex h-16 4xl:h-28 w-full mx-auto items-center justify-between px-4 md:px-6 overflow-hidden">
+      <div className="max-w-7xl flex h-16 4xl:h-28 w-full mx-auto items-center justify-between px-4 md:px-6 overflow-hidden">
         <Link href="/" className="flex items-center space-x-2">
           <Image
             src={`${isScrolled ? '/images/new-homepage/PNG/L_01.png' : '/images/new-homepage/PNG/L_02.png'}`}

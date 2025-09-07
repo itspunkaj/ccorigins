@@ -171,8 +171,8 @@ export default function PortfolioPage() {
               Ready to Create Something Amazing?
             </h2>
             <p className="text-xl opacity-90">
-              Let&apos;s discuss how we can bring your vision to life with our expertise in design and
-              advertising.
+              Let&apos;s discuss how we can bring your vision to life with our expertise in design
+              and advertising.
             </p>
             <Button size="lg" variant="outline">
               <Link href={'/contact'} className="">

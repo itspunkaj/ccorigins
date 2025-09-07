@@ -18,7 +18,7 @@ const referralTiers: ReferralTier[] = [
 export default function ReferFriendModalForm() {
   const { setIsReferFriendModalOpen } = useModalStore();
   return (
-    <div className="fixed inset-0  bg-black bg-opacity-50 z-50 overflow-scroll">
+    <div className="fixed inset-0  bg-black bg-opacity-50 z-[100] overflow-scroll">
       <div className="relative bg-[url(/images/interior-design/referral-bg.jpg)] bg-cover">
         <button
           className="absolute text-white top-5 right-5"

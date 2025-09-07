@@ -1,4 +1,3 @@
-
 'use client';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -159,7 +158,10 @@ export default function About() {
               >
                 {catalogueData.map((item, index) => {
                   return (
-                    <SwiperSlide key={index} className="!flex !items-center !justify-center h-full ">
+                    <SwiperSlide
+                      key={index}
+                      className="!flex !items-center !justify-center h-full "
+                    >
                       <Image
                         src={item.image}
                         height={1000}

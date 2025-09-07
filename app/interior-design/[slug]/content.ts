@@ -1,4 +1,4 @@
-import { url } from "inspector";
+import { url } from 'inspector';
 
 export interface image {
   id: string;
@@ -74,66 +74,66 @@ export const fullHomeContent = {
       class: '',
     },
   ],
-  images2 : [
+  images2: [
     {
-        id : '13',
-        url : '/images/interior-design/full-home/13.jpg',
-        class : "",
+      id: '13',
+      url: '/images/interior-design/full-home/13.jpg',
+      class: '',
     },
     {
-        id : '14',
-        url : '/images/interior-design/full-home/14.jpg',
-        class : "",
+      id: '14',
+      url: '/images/interior-design/full-home/14.jpg',
+      class: '',
     },
     {
-        id : '15',
-        url : '/images/interior-design/full-home/15.jpg',
-        class : "",
+      id: '15',
+      url: '/images/interior-design/full-home/15.jpg',
+      class: '',
     },
     {
-        id : '16',
-        url : '/images/interior-design/full-home/16.jpg',
-        class : "",
+      id: '16',
+      url: '/images/interior-design/full-home/16.jpg',
+      class: '',
     },
     {
-        id : '17',
-        url : '/images/interior-design/full-home/17.jpg',
-        class : "row-span-2",
+      id: '17',
+      url: '/images/interior-design/full-home/17.jpg',
+      class: 'row-span-2',
     },
     {
-        id : '18',
-        url : '/images/interior-design/full-home/18.jpg',
-        class : "",
+      id: '18',
+      url: '/images/interior-design/full-home/18.jpg',
+      class: '',
     },
     {
-        id : '19',
-        url : '/images/interior-design/full-home/19.jpg',
-        class : "",
+      id: '19',
+      url: '/images/interior-design/full-home/19.jpg',
+      class: '',
     },
     {
-        id : '20',
-        url : '/images/interior-design/full-home/20.jpg',
-        class : "",
+      id: '20',
+      url: '/images/interior-design/full-home/20.jpg',
+      class: '',
     },
     {
-        id : '21',
-        url : '/images/interior-design/full-home/21.jpg',
-        class : "",
+      id: '21',
+      url: '/images/interior-design/full-home/21.jpg',
+      class: '',
     },
     {
-        id : '22',
-        url : '/images/interior-design/full-home/22.jpg',
-        class : "!col-span-2",
+      id: '22',
+      url: '/images/interior-design/full-home/22.jpg',
+      class: '!col-span-2',
     },
     {
-        id : '23',
-        url : '/images/interior-design/full-home/23.jpg',
-        class : "!col-span-2",
+      id: '23',
+      url: '/images/interior-design/full-home/23.jpg',
+      class: '!col-span-2',
     },
     {
-        id : '24',
-        url : '/images/interior-design/full-home/24.jpg',
-        class : "!col-span-2",
+      id: '24',
+      url: '/images/interior-design/full-home/24.jpg',
+      class: '!col-span-2',
     },
-  ]
+  ],
 };

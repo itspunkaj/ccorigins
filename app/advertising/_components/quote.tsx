@@ -1,4 +1,3 @@
-
 export default function QuoteSection() {
   return (
     <div className="max-md:py-10 md:h-screen bg-black text-white w-full flex flex-col items-center justify-center px-4">

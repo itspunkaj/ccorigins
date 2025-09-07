@@ -6,7 +6,7 @@ const thinkInteriorImages = [
   {
     id: '1',
     title: 'Full Home',
-    link : "/full-home",
+    link: '/full-home',
     url: '/images/interior-design/full-home.jpg',
   },
   {

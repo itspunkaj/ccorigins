@@ -27,7 +27,7 @@ export default function Page({ params }: { params: Promise<{ step: string }> }) 
   };
 
   return (
-    <div className="w-screen min-h-screen flex items-center flex-col justify-center bg-gray-100 pt-20">
+    <div className="w-screen min-h-screen flex items-center flex-col justify-center bg-gray-100 pt-20 pb-10">
       <StepProgressBar currentStep={step as steps} />
       <div className="bg-white rounded-lg shadow-lg md:w-1/2 w-full">
         {/* 🔹 Inserted progress bar here */}

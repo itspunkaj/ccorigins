@@ -10,11 +10,11 @@ export default function CalculateSection() {
         <div className="bg-transparent py-10">
           <div className=" flex max-sm:flex-col items-center justify-center font-light">
             <div className="w-1/3 px-2">
-            <Link href="/interior-design/design-calculator/bhk-type">
-              <Button className="w-full md:text-2xl 4xl:text-4xl py-6 normal-case font-light">
-                Calculate
-              </Button>
-            </Link>
+              <Link href="/interior-design/design-calculator/bhk-type">
+                <Button className="w-full md:text-2xl 4xl:text-4xl py-6 normal-case font-light">
+                  Calculate
+                </Button>
+              </Link>
             </div>
             <div className="flex-1/3 text-white max-sm:mt-3 max-sm:text-center">
               <h3 className="text-4xl">Get the estimate</h3>

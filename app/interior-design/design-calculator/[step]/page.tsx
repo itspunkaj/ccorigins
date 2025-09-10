@@ -1,14 +1,13 @@
-"use client";
-import { use } from "react";
-import { CalculatorSteps } from "./common";
-import { steps } from "./types";
-import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
-import { useRouter } from "next/navigation";
-import  StepProgressBar from "./_components/StepProgressBar"
+'use client';
+import { use } from 'react';
+import { CalculatorSteps } from './common';
+import { steps } from './types';
+import { Button } from '@/components/ui/button';
+import { ArrowLeft } from 'lucide-react';
+import { useRouter } from 'next/navigation';
+import StepProgressBar from './_components/StepProgressBar';
 
 // 🔹 Progress bar component inside same file for simplicity
-
 
 export default function Page({ params }: { params: Promise<{ step: string }> }) {
   const { step } = use(params);
@@ -29,7 +28,7 @@ export default function Page({ params }: { params: Promise<{ step: string }> }) 
 
   return (
     <div className="w-screen min-h-screen flex items-center flex-col justify-center bg-gray-100 pt-20">
-        <StepProgressBar currentStep={step as steps} />
+      <StepProgressBar currentStep={step as steps} />
       <div className="bg-white rounded-lg shadow-lg md:w-1/2 w-full">
         {/* 🔹 Inserted progress bar here */}
 
@@ -39,9 +38,7 @@ export default function Page({ params }: { params: Promise<{ step: string }> }) 
             <p>
               <span className="text-gray-600">{currentStep.subtitle}</span>
               {currentStep.infolink && (
-                <span className="text-primaryYellow">
-                  &nbsp;{currentStep.infolink}
-                </span>
+                <span className="text-primaryYellow">&nbsp;{currentStep.infolink}</span>
               )}
             </p>
           )}
@@ -51,7 +48,7 @@ export default function Page({ params }: { params: Promise<{ step: string }> }) 
         <div className="px-6 py-4 flex justify-between border-t">
           <Button
             className="border-none flex items-center gap-1 font-thin"
-            variant={"outline"}
+            variant={'outline'}
             disabled={currentIndex === 0}
             onClick={() => goToStep(currentIndex - 1)}
           >
@@ -59,10 +56,7 @@ export default function Page({ params }: { params: Promise<{ step: string }> }) 
             <span>Back</span>
           </Button>
           {currentIndex !== stepKeys.length - 1 && (
-            <Button
-              className="border-none font-thin"
-              onClick={() => goToStep(currentIndex + 1)}
-            >
+            <Button className="border-none font-thin" onClick={() => goToStep(currentIndex + 1)}>
               Next
             </Button>
           )}

@@ -1,8 +1,7 @@
-"use client";
+'use client';
 
-import { CalculatorSteps } from "../common";
-import { steps } from "../types";
-
+import { CalculatorSteps } from '../common';
+import { steps } from '../types';
 
 export default function StepProgressBar({ currentStep }: { currentStep: steps }) {
   const stepKeys = Object.keys(CalculatorSteps) as steps[];
@@ -17,14 +16,17 @@ export default function StepProgressBar({ currentStep }: { currentStep: steps })
           const isCurrent = index === currentIndex;
 
           return (
-            <div key={step} className={`flex items-center ${ index < stepKeys.length - 1 && "flex-1" }`}>
+            <div
+              key={step}
+              className={`flex items-center ${index < stepKeys.length - 1 && 'flex-1'}`}
+            >
               {/* Circle */}
               <div
                 className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold transition-colors duration-300
                   ${
                     isCompleted || isCurrent
-                      ? "bg-primaryYellow text-white"
-                      : "bg-gray-300 text-gray-600"
+                      ? 'bg-primaryYellow text-white'
+                      : 'bg-gray-300 text-gray-600'
                   }`}
               >
                 {index + 1}
@@ -34,7 +36,7 @@ export default function StepProgressBar({ currentStep }: { currentStep: steps })
               {index < stepKeys.length - 1 && (
                 <div
                   className={`flex-1 h-1 transition-colors duration-300
-                    ${isCompleted ? "bg-primaryYellow" : "bg-gray-300"}`}
+                    ${isCompleted ? 'bg-primaryYellow' : 'bg-gray-300'}`}
                 />
               )}
             </div>

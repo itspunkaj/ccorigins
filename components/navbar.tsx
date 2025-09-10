@@ -19,7 +19,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-        setIsScrolled(window.scrollY > 0);
+      setIsScrolled(window.scrollY > 0);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -39,12 +39,12 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed flex font-bahn justify-end items-center max-sm:px-2 top-0 z-50 w-full h-fit bg-white !text-black  shadow-md transition-all duration-150 ease-in-out ${(!isScrolled && !pathname.includes("design-calculator")) ? ' !bg-transparent !text-white shadow-none' : ''}`}
+      className={`fixed flex font-bahn justify-end items-center max-sm:px-2 top-0 z-50 w-full h-fit bg-white !text-black  shadow-md transition-all duration-150 ease-in-out ${!isScrolled && !pathname.includes('design-calculator') ? ' !bg-transparent !text-white shadow-none' : ''}`}
     >
       <div className="max-w-7xl flex h-16 4xl:h-28 w-full mx-auto items-center justify-between px-4 md:px-6 overflow-hidden">
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src={`${!isScrolled && !pathname.includes("design-calculator") ? '/images/new-homepage/PNG/L_02.png' : '/images/new-homepage/PNG/L_01.png'}`}
+            src={`${!isScrolled && !pathname.includes('design-calculator') ? '/images/new-homepage/PNG/L_02.png' : '/images/new-homepage/PNG/L_01.png'}`}
             height={20}
             width={50}
             alt="Logo"

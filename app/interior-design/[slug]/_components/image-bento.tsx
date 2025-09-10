@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { image } from '../content';
+import { image } from '../common';
 export default function ImageBento({ props }: { props: { images: image[] } }) {
   return (
     <div className="w-full grid grid-cols-6 gap-2">

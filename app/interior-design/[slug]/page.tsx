@@ -1,6 +1,6 @@
 'use client';
 import { use, useEffect, useState } from 'react';
-import { content, fullHomeContent } from './content';
+import { content, fullHomeContent } from './common';
 import ImageBento from './_components/image-bento';
 import CalculateSection from '../_components/calculate-section';
 import CTASection from '../_components/cta-section';

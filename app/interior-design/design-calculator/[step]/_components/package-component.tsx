@@ -52,6 +52,8 @@ export default function PackageComponent() {
                     <div key={pkg.name} onClick={()=>setPackage(pkg.name)} className={`cursor-pointer border rounded-md w-full p-4 gap-4 flex items-start ${isSelected && 'bg-yellow-50 border-primaryYellow'}`}>
                         <input
                             id={`${pkg.name}`}
+                            checked={isSelected} 
+                            onChange={()=>setPackage(pkg.name)}
                             name="bhk"
                             type="radio"
                             className="accent-primaryYellow border-none ring-0 mt-1"

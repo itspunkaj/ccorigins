@@ -7,27 +7,27 @@ import GetQuoteComponent from './_components/get-quote-component';
 export const CalculatorSteps: Record<steps, calculatorStep> = {
   [steps.BHKType]: {
     step: 1,
+    progress: "BHK Type",
     title: 'Select Your BHK Type',
-    subtitle: 'To know more about this,',
-    infolink: 'click here',
-    component : <BHKTypeComponent/>
+    component: <BHKTypeComponent />
   },
   [steps.RoomsToDesign]: {
     step: 2,
+    progress: "Rooms",
     title: "Select the rooms you'd like us to design",
-    subtitle: 'To know more about this,',
-    infolink: 'click here',
-    component : <SelectRoomsComponent/>
+    component: <SelectRoomsComponent />
 
   },
   [steps.Package]: {
     step: 3,
+    progress: "Package",
     title: 'Pick your package',
-    component: <PackageComponent/>
+    component: <PackageComponent />
   },
   [steps.GetQuote]: {
     step: 4,
+    progress: "Quote",
     title: 'Your estimate is almost ready',
-    component : <GetQuoteComponent/>
+    component: <GetQuoteComponent />
   },
 };

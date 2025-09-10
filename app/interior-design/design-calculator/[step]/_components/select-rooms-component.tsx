@@ -16,13 +16,15 @@ export default function SelectRoomsComponent() {
                             </div>
                             <div className="flex items-center">
                                 <button
-                                    disabled={room.number <= BHK}
+                                    
                                     onClick={() => updateRooms(room.name, -1)}
-                                    className="flex items-center justify-center rounded-full p-1 bg-primaryYellow"><Minus className="size-4" /></button>
+                                    disabled={room.number <=  0}
+                                    className="flex items-center justify-center rounded-full p-1 bg-primaryYellow disabled:bg-yellow-100"><Minus className="size-4" /></button>
                                 <span className="mx-2 w-2 text-center">{room.number}</span>
                                 <button
                                     onClick={() => updateRooms(room.name, 1)}
-                                    className="flex items-center justify-center rounded-full p-1 bg-primaryYellow"><Plus className="size-4" /></button>
+                                    disabled={room.number >= BHK}
+                                    className="flex items-center justify-center rounded-full p-1 bg-primaryYellow disabled:bg-yellow-100"><Plus className="size-4" /></button>
                             </div>
                         </div>
                     )

@@ -22,7 +22,7 @@ export const useRooms = create<RoomState>(set => ({
         { name: "Bathroom", number: 1 },
         { name: "Dining", number: 1 },
     ],
-    PKG: "",
+    PKG: "Essentials (₹₹)",
     setBHK: (bhk: number) => {
         set((state) => {
             return {
@@ -34,7 +34,7 @@ export const useRooms = create<RoomState>(set => ({
     updateRooms: (roomName, delta) => {
         set(state => ({
             rooms: state.rooms.map((room) => {
-                return room.name === roomName ? { ...room, number: Math.max(0, room.number + delta) } : room
+                return room.name === roomName ? { ...room, number: Math.max(0, Math.min(room.number + delta, state.BHK)) } : room
             })
         }))
     },

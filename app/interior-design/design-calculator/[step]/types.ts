@@ -2,6 +2,7 @@ import React from "react";
 
 export interface calculatorStep {
     step : number;
+    progress : string;
     title : string;
     subtitle? : string;
     infolink? : string;
